@@ -4,6 +4,7 @@
    :caption: Theme Documentation
    :maxdepth: 2
 
+   readygo
    installing
    configuring
    changelog
