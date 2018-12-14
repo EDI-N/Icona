@@ -6,6 +6,7 @@
    
    installing
    readygo
+   testconvert
    MarkdownIt
    configuring
    changelog
