@@ -3,9 +3,10 @@
 .. toctree::
    :caption: Theme Documentation
    :maxdepth: 2
-
-   readygo
+   
    installing
+   readygo
+   MarkdownIt
    configuring
    changelog
    contributing
