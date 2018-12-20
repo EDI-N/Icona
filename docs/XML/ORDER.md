@@ -111,7 +111,7 @@
 |PACKINGTYPE|O|Строка (3)| Тип упаковки |
 |PACKINGQUANTITY|O| Число положительное| Количество упаковок|
 |PACKINGUNIT|O| Число положительное|Упаковщик |
-|PACKING**| |||
-|POSITION**| |||
-|HEAD**| |||
+|**PACKING**| |||
+|**POSITION**| |||
+|**HEAD**| |||
 |**ORDER**| |||
