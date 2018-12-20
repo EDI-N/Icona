@@ -1,8 +1,8 @@
 .. include:: ../README.rst
 
 .. toctree::
-   :caption: Theme Documentation
-   :maxdepth: 2
+   :caption: Documentation
+   :maxdepth: 4
    
    installing
    readygo
