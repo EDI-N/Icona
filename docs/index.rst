@@ -4,7 +4,7 @@
    :caption: Documentation
    :maxdepth: 4
    
-   ORDER
+   ORDERa
    installing
    readygo
    testconvert
