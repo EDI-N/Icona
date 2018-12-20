@@ -1,5 +1,5 @@
 ***********************************
-Abracadabra
+Kenguru
 ***********************************
 
 
@@ -22,13 +22,6 @@ Abracadabra
 |              <CAMPAIGNNUMBER></CAMPAIGNNUMBER>              |    М    |     Строка (16)     |              Номер договора на поставку               |
 |             <POSITIONSAMOUNT></POSITIONSAMOUNT>             |    М    |  Число десятичное   |             Сумма по вем позициям без НДС             |
 |                      <VATSUM></VATSUM>                      |    М    |  Число десятичное   |                       Сума НДС                        |
-|                 <TOTALAMOUNT></TOTALAMOUNT>                 |    М    |  Число десятичное   |                   Общая сумма с НДС                   |
-|                    <CURRENCY></CURRENCY>                    |    М    |     Строка (3)      |                      Код валюты                       |
-|                     <DOCTYPE></DOCTYPE>                     |    М    |     Строка (1)      | Тип документа: O — оригинал, R — замена, D — удаление |
-|                        <INFO></INFO>                        |    О    |     Строка (70)     |                      Информация                       |
-|                              <HEAD>                         |         |                     |                                                       |
-|                   <PERFORMER></PERFORMER>                   |    М    |     Число (13)      |                    GLN исполнителя                    |
-|               <PERFORMERNAME></PERFORMERNAME>               |    О    |     Строка (70)     |                 Название исполнителя                  |
 |          <PERFORMERNDSNUMBER></PERFORMERNDSNUMBER>          |    О    |     Строка (35)     |              Номер свид. НДС исполнителя              |
 |       <PERFORMERFISCALNUMBER></PERFORMERFISCALNUMBER>       |    О    |     Строка (35)     |                    ИНН исполнителя                    |
 | <PERFORMERREGISTRATIONNUMBER></PERFORMERREGISTRATIONNUMBER> |    О    |     Строка (35)     |             Номер регистрации исполнителя             |
