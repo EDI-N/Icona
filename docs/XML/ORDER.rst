@@ -49,6 +49,24 @@ Giant Tables
 +------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+
 
 
+    * - List table
+      - Header 1
+      - Header 2
+      - Header 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
+    * - Stub Row 1
+      - Row 1
+      - Column 2
+      - Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
+    * - Stub Row 2
+      - Row 2
+      - Column 2
+      - Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
+    * - Stub Row 3
+      - Row 3
+      - Column 2
+      - Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
+
+
 
 Заказ (ORDER) на поставку отправляет покупатель поставщику, указывая штрихкод продукта, его описание, заказанное количество, цену и прочую необходимую информацию.
 
