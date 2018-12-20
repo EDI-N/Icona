@@ -4,7 +4,7 @@
    :caption: Documentation
    :maxdepth: 4
    
-   ORDERa
+   XML/ORDER
    installing
    readygo
    testconvert
