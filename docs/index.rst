@@ -5,6 +5,7 @@
    :maxdepth: 4
    
    XML/ORDER
+   XML/COACSU
    installing
    readygo
    testconvert
