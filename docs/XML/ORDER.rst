@@ -2,6 +2,18 @@
 ORDER
 *****
 
+Заказ (ORDER)
+=============
+
+.. csv-table:: Заказ (ORDER)
+  :file: files/order.csv
+  :widths:  40, 7, 12, 41
+  :header-rows: 1
+
+
+
+
+
 
 Заказ (ORDER) штрихкод продукта, его описание, заказанное количество, цену и прочую необходимую информацию.
 Here's a grid table followed by a simple table:
