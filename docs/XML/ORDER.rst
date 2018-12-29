@@ -6,7 +6,7 @@ ORDER
 =============
 
 .. csv-table:: Заказ (ORDER)
-  :file: files/order.csv
+  :file: order.csv
   :widths:  40, 7, 12, 41
   :header-rows: 1
 
