@@ -1,10 +1,3 @@
-Some header
-===========
-
-и тут так незаментно рабочее версионирование: |version|
-и релизик: |release|
-
-
 .. include:: ../README.rst
 
 .. toctree::
