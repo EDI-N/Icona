@@ -1,3 +1,0 @@
-# Icona
-some text
-екщгидуы
