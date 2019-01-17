@@ -4,9 +4,8 @@
    :caption: Documentation
    :maxdepth: 4
    
-   XML/ORDER
-   XML/COACSU
    installing
+   XML/ORDER
    readygo
    testconvert
    MarkdownIt
