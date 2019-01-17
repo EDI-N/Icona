@@ -18,7 +18,10 @@ import os
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('./demo/'))
 
+
 from Icona import __version__
+=======
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
