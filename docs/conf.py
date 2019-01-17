@@ -19,7 +19,7 @@ sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('./demo/'))
 
 
-# from Icona import __version__
+from sphinx_rtd_theme import __version__
 
 
 
