@@ -1,8 +1,3 @@
-
-Hello everybody, we got new version for you: |version|
-======================================================
-
-
 .. include:: ../README.rst
 
 .. toctree::
