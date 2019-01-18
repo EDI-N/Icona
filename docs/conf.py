@@ -41,17 +41,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinxcontrib.httpdomain',
-    'releases',
 ]
-
-
-# 'releases' (changelog) settings
-releases_issue_uri = "https://github.com/EDI-N/Icona/issues/%s"
-releases_release_uri = "https://github.com/EDI-N/Icona/tree/%s"
-
-# for 'releases' also: they determine the targets of the issue & release links in the HTML output (https://releases.readthedocs.io/en/latest/usage.html):
-releases_github_path = 'EDI-N/Icona'
-releases_document_name = ['sabaka_changelog']
 
 # Do not warn about external images (status badges in README.rst)
 suppress_warnings = ['image.nonlocal_uri']
