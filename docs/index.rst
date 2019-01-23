@@ -23,6 +23,7 @@
     demo/demo
     demo/lists_tables
     demo/api
+    demo/Captain
     
 .. toctree::
     :maxdepth: 3
