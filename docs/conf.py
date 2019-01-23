@@ -18,7 +18,10 @@ import os
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('./demo/'))
 
+
 from sphinx_rtd_theme import __version__
+
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -117,7 +120,26 @@ intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+#html_theme = 'sphinx_rtd_theme'
+
+import os
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:  # only import and set the theme if we're building docs locally
+  import sphinx_rtd_theme
+  html_theme = 'sphinx_rtd_theme'
+  html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+else:
+  html_context = { 
+    'css_files': [
+        'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
+        'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
+        '_static/theme.css',
+    ],
+}
+
+
+
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -148,7 +170,7 @@ html_logo = "demo/static/logo_edin2.gif"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['_static']
+html_static_path = ['demo/static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.

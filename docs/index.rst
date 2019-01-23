@@ -4,8 +4,8 @@
    :caption: Documentation
    :maxdepth: 4
    
-   XML/ORDER
    installing
+   XML/ORDER
    readygo
    testconvert
    MarkdownIt
