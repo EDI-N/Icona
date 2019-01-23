@@ -23,6 +23,13 @@
     demo/demo
     demo/lists_tables
     demo/api
+    
+.. toctree::
+    :maxdepth: 3
+    :numbered:
+    :caption: Keep trying Captain Marvel
+
+    demo/Captain
 
 .. toctree::
     :maxdepth: 3
@@ -31,9 +38,3 @@
 
     demo/long
     
-.. toctree::
-    :maxdepth: 3
-    :numbered:
-    :caption: Keep trying Captain Marvel
-
-    demo/Captain
