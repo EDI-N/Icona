@@ -23,6 +23,14 @@
     demo/demo
     demo/lists_tables
     demo/api
+    demo/Captain
+    
+.. toctree::
+    :maxdepth: 3
+    :numbered:
+    :caption: Keep trying Captain Marvel
+
+    demo/Captain
 
 .. toctree::
     :maxdepth: 3
@@ -30,3 +38,4 @@
     :caption: This is an incredibly long caption for a long menu
 
     demo/long
+    
