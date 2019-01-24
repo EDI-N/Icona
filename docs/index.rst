@@ -31,6 +31,8 @@
     :caption: Keep trying Captain Marvel
 
     demo/Captain
+    demo/doc_for_link_test
+
 
 .. toctree::
     :maxdepth: 3
