@@ -220,6 +220,7 @@ htmlhelp_basename = 'SphinxRTDthemedemodoc'
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
+    `footer`: `че как че по чем`
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
