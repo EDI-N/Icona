@@ -220,7 +220,6 @@ htmlhelp_basename = 'SphinxRTDthemedemodoc'
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
-    `footer`: `че как че по чем`
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
@@ -230,6 +229,8 @@ latex_elements = {
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
 }
+
+
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
