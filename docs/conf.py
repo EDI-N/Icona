@@ -232,8 +232,7 @@ htmlhelp_basename = 'SphinxRTDthemedemodoc'
 
 #стало 
 latex_elements = {
-    'papersize': 'a4paper'
-    'footer': '55555555555555555555'
+    'footer': 55555555555555555555 ,
 }
 
 
