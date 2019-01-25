@@ -232,7 +232,7 @@ htmlhelp_basename = 'SphinxRTDthemedemodoc'
 
 #стало 
 latex_elements = {
-    'footer': "55555555555555555555" ,
+    'atendofbody': '55555555555555555555',
 }
 
 
