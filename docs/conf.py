@@ -218,8 +218,8 @@ htmlhelp_basename = 'SphinxRTDthemedemodoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
-#Было
-#latex_elements = {
+
+latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
@@ -228,13 +228,7 @@ htmlhelp_basename = 'SphinxRTDthemedemodoc'
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
-#}
-
-#стало 
-latex_elements = {
-    'atendofbody': '55555555555555555555',
 }
-
 
 
 # Grouping the document tree into LaTeX files. List of tuples
