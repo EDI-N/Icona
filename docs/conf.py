@@ -68,10 +68,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Read the Docs Sphinx Theme'
-copyright = u'Служба Технической Поддержки:
-    * edi-n.com
-    * +38 (044) 359-01-12
-    * support@edi-n.com'
+copyright = u'Dave Snider, Read the Docs, Inc. & contributors'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
