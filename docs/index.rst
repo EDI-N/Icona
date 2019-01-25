@@ -13,6 +13,7 @@
    changelog
    contributing
 
+.. footer:: Ну че как работает?
 
 .. toctree::
     :maxdepth: 2
@@ -41,7 +42,7 @@
     demo/long
 
 
-.. footer:: Ну че как работает?
+
 
 
 
