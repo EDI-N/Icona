@@ -156,7 +156,7 @@ html_theme_path = ["../.."]
 #Было
 #html_title = None
 #Стало
-html_title = 'so fristail'
+html_title = "so fristail"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
