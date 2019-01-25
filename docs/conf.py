@@ -218,8 +218,8 @@ htmlhelp_basename = 'SphinxRTDthemedemodoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
-
-latex_elements = {
+#Было
+#latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
@@ -228,6 +228,12 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
+#}
+
+#стало 
+latex_elements = {
+    'papersize': 'a4paper'
+    'footer': '55555555555555555555'
 }
 
 
