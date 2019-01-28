@@ -4,7 +4,10 @@ Kenguru
 
 .. footer:: Ну че как работает?
 
-.. include:: inclusion.txt
+.. include:: inclusion.rst
+
+
+    .. include:: inclusion.rst
 
 Опаньки
 =======================
