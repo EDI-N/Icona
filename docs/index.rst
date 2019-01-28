@@ -13,6 +13,7 @@
    changelog
    contributing
 
+.. footer:: Ну че как работает?
 
 .. toctree::
     :maxdepth: 2
@@ -39,4 +40,9 @@
     :caption: This is an incredibly long caption for a long menu
 
     demo/long
-    
+
+
+
+
+
+
