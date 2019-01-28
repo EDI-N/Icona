@@ -43,7 +43,9 @@ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 
 .. include:: Captain.rst
 
+Предполагаю, что далее может ничего без названия не отображаться:
 
+.. include:: without_name.rst
 
 
 
