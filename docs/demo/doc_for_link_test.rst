@@ -39,6 +39,9 @@
 
 wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 
+А теперь невероятный трюк:
+
+.. include:: Captain.rst
 
 
 
