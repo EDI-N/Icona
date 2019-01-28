@@ -33,4 +33,12 @@
 
 Предшествует текст |армагедон| после этого все фильтры будут сброшены.
 
-.. |армагедон| include:: files/12345.rst
+.. include:: files/12345.rst
+
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
+.. include:: <12345.rst>
+
+
+
+
