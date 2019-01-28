@@ -35,6 +35,8 @@
 
 .. include:: files/12345.rst
 
+Если хочешь добавить документ в документ: http://docutils.sourceforge.net/docs/ref/rst/directives.html#miscellaneous
+
 wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 
 
