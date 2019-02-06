@@ -1,5 +1,13 @@
 .. include:: ../README.rst
 
+.. toctree::  
+   :maxdepth: 
+   
+   edin_doc/general/rabota_s_platformoj_EDIN.rst
+   edin_doc/integration/who_wants_to_live_forever.rst
+   edin_doc/retail/formirovanie_otpravka_dokumenta_Podtverzhdenie_zakaza_ORDRSP_na_web.rst
+
+  
 
 .. toctree::  
    :maxdepth: 4
