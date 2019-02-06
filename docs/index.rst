@@ -3,8 +3,8 @@
 .. toctree::
    :maxdepth: 1
 
-   Edin_doc/general/index
-   Edin_doc/retail/index
+   genera/index
+   retail/index
 
 
 .. toctree::  
