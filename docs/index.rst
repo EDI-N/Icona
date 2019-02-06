@@ -1,11 +1,5 @@
 .. include:: ../README.rst
 
-.. toctree::
-   :maxdepth: 1
-
-   genera/index
-   retail/index
-
 
 .. toctree::  
    :maxdepth: 4
