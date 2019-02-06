@@ -1,10 +1,5 @@
 .. include:: ../README.rst
 
-.. toctree::
-   :maxdepth: 1
-
-   Edin_doc/general/index
-   Edin_doc/retail/index
 
 
 .. toctree::  
