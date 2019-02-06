@@ -3,9 +3,9 @@
 .. toctree::  
    :maxdepth: 2
    
-   edin_doc/general/index.rst
-   edin_doc/retail/index.rst
-   edin_doc/integration/who_wants_to_live_forever.rst
+   edin_doc/general/index
+   edin_doc/retail/index
+   edin_doc/integration/who_wants_to_live_forever
 
   
 
