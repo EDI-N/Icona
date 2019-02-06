@@ -1,7 +1,6 @@
 .. include:: ../README.rst
 
-.. toctree::
-   :caption: Documentation
+.. toctree::  
    :maxdepth: 4
    
    installing
