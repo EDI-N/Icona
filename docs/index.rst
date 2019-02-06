@@ -1,7 +1,7 @@
 .. include:: ../README.rst
 
 .. toctree::  
-   :maxdepth: 
+   :maxdepth: 1
    
    edin_doc/general/rabota_s_platformoj_EDIN.rst
    edin_doc/integration/who_wants_to_live_forever.rst
