@@ -1,7 +1,7 @@
 .. include:: ../README.rst
 
 .. toctree::  
-   :maxdepth: 1
+   :maxdepth: 2
    
    edin_doc/general/index.rst
    edin_doc/retail/index.rst

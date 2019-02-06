@@ -1,4 +1,4 @@
-edin_doc
+general
 #########
 
 .. toctree::
