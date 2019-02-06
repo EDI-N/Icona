@@ -4,8 +4,8 @@
    :maxdepth: 1
    
    edin_doc/general/index.rst
+   edin_doc/retail/index.rst
    edin_doc/integration/who_wants_to_live_forever.rst
-   edin_doc/retail/formirovanie_otpravka_dokumenta_Podtverzhdenie_zakaza_ORDRSP_na_web.rst
 
   
 
