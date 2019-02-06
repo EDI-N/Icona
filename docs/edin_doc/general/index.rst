@@ -2,8 +2,8 @@ general2
 #########
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
    
-   edin_doc/general/rabota_s_platformoj_EDIN
-   edin_doc/general/vosstanovlenie_parolja_na platforme_EDIN
+   rabota_s_platformoj_EDIN
+   vosstanovlenie_parolja_na platforme_EDIN
    
