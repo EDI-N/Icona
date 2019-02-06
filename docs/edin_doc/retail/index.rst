@@ -1,4 +1,4 @@
-retail
+retail2
 #########
 
 .. toctree::
