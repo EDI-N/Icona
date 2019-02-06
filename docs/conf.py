@@ -155,6 +155,7 @@ html_theme_path = ["../.."]
 # "<project> v<release> documentation".
 #html_title = None
 
+
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
 
@@ -229,6 +230,7 @@ latex_elements = {
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
 }
+
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
