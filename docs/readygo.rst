@@ -18,6 +18,8 @@ Kenguru
 
 :vertical:`lknlknvlkdnfvlksdlfknvlksmlkmdlkfm`
 
+.. role:: vertical-text
+
 :vertical-text:`укдау уадвм двам вдль ывас ыждльвс лывьс ывсаыв 123`
 
 
