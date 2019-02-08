@@ -16,6 +16,8 @@ Kenguru
 
 .. role:: vertical
 
+:vertical:`lknlknvlkdnfvlksdlfknvlksmlkmdlkfm`
+
 :vertical:`укдау уадвм двам вдль ывас ыждльвс лывьс ывсаыв 123`
 
 
