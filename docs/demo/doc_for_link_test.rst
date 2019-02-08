@@ -12,7 +12,7 @@
 
 .. csv-table:: Таблица давай!!!
   :file: files/newCSV.csv
-  :widths:  40, 7, 12, 41
+  :widths:  1, 7, 12, 41
   :header-rows: 1
 
 
