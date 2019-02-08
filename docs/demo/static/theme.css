@@ -19,6 +19,7 @@
 }
 
 
+
 /*этот блок делает текст вертикальным*/
 
    .vertical {
@@ -34,7 +35,7 @@
 .vertical-text {
 	transform: rotate(90deg);
 	transform-origin: left top 0;
-   float: left;
+	float: left;
 }
 
 /*этот блок делает текст вертикальным*/
