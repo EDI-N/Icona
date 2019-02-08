@@ -14,6 +14,7 @@
   :file: files/newCSV.csv
   :widths:  1, 7, 12, 41
   :header-rows: 1
+  :stub-columns: 1
 
 
 
