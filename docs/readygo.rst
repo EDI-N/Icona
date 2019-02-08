@@ -14,13 +14,11 @@ Kenguru
 
 вертикальный текст?
 
-.. role:: vertical
-
-:vertical:`lknlknvlkdnfvlksdlfknvlksmlkmdlkfm`
-
 .. role:: vertical-text
 
 :vertical-text:`укдау уадвм двам вдль ывас ыждльвс лывьс ывсаыв 123`
+
+:vertical-text:`как хачу так и пишу!!!`
 
 
 
