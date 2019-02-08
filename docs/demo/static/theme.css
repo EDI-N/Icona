@@ -21,25 +21,9 @@
 
 //это по идее должно сделать текст вертикальным
 
-
 .vertical-text {
-    writing-mode:tb-rl;
-    transform: rotate(90deg);
-    white-space:nowrap;
-    display:block;
-    bottom:0;
-    width:20px;
-    height:20px;
-    float: left;
-}
-
-
-
-
-/*.vertical-text {
 	transform: rotate(90deg);
 	transform-origin: left top 0;
 	float: left;
-}*/
-
+}
 
