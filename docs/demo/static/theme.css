@@ -29,3 +29,10 @@
       width:20px;
       height:20px;
 }
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+   float: left;
+}
+
