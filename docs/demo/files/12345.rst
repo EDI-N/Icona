@@ -6,3 +6,11 @@ So what
 Допутим.... допустим
 Название поля,Тип,Формат,Описание
 **ACT**, , ,Начало документа
+
+
+
+.. image:: some_pics/corrected.jpg
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+
