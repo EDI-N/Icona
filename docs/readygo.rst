@@ -18,7 +18,7 @@ Kenguru
 
 :vertical:`lknlknvlkdnfvlksdlfknvlksmlkmdlkfm`
 
-:vertical:`укдау уадвм двам вдль ывас ыждльвс лывьс ывсаыв 123`
+:vertical-text:`укдау уадвм двам вдль ывас ыждльвс лывьс ывсаыв 123`
 
 
 
