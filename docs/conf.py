@@ -120,23 +120,23 @@ intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+#html_theme = 'sphinx_rtd_theme'
 
-#import os
-#on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-#
-#if not on_rtd:  # only import and set the theme if we're building docs locally
-#  import sphinx_rtd_theme
-#  html_theme = 'sphinx_rtd_theme'
-#  html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-#else:
-#  html_context = { 
-#    'css_files': [
-#        'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
-#        'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-#        '_static/theme.css',
-#    ],
-#}
+import os
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:  # only import and set the theme if we're building docs locally
+  import sphinx_rtd_theme
+  html_theme = 'sphinx_rtd_theme'
+  html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+else:
+  html_context = { 
+    'css_files': [
+        'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
+        'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
+        '_static/theme.css',
+    ],
+}
 
 
 
