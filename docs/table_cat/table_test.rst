@@ -17,7 +17,7 @@
 
 И тут на сцену выходит лысый мужик и говорит Авадакидабра_
 это не сработало и он такой fufu_
-interesting
+interesting а потом он говорит 12345_pagulat
 
 
 .. _Авадакидабра:
@@ -29,7 +29,16 @@ interesting
      .. image:: csvshnik/pic/ORDER.png
 
 просто текст бам
+
 .. image:: csvshnik/pic/ORDER.png
-картинка!!
+   :name: 12345_pagulat
+
+тут вверху картинка
+а тут я ее пробу вызвать:
+
+
+.. _12345_pagulat:
+
+
 
 
