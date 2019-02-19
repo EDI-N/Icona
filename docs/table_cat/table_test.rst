@@ -5,8 +5,8 @@
 Справочник хароший
 =============
 .. csv-table:: Ну типа справочник
-  :file: csvshnik/partners_06.csv
-  :widths: 10, 2, 2, 2, 2 ,2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+  :file: csvshnik/999.csv
+  :widths: 10, 2
 
 
 
@@ -17,8 +17,8 @@
     :columns: 2
 
     - .. csv-table:: Справочник торговых сетей Украина
-         :file: csvshnik/partners_06.csv
-         :widths: 10, 20, 20, 20, 20 ,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20
+         :file: csvshnik/999.csv
+         :widths: 10, 20
 
     - .. csv-table:: Справочник торговых сетей Украина
          :file: csvshnik/partners_05.csv
