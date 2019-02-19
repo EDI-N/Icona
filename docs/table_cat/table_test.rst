@@ -16,10 +16,20 @@
 
 
 И тут на сцену выходит лысый мужик и говорит Авадакидабра_
+это не сработало и он такой fufu_
+interesting
 
 
 .. _Авадакидабра:
    .. image:: csvshnik/pic/ORDER.png
 
+
+
+.. fufu:
+.. image:: csvshnik/pic/ORDER.png
+
+просто текст бам
+.. image:: csvshnik/pic/ORDER.png
+картинка!!
 
 
