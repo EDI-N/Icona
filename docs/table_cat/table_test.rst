@@ -17,7 +17,7 @@
     :columns: 2
 
     - .. csv-table:: Справочник торговых сетей Украина
-         :file: csvshnik/partners_05.csv
+         :file: csvshnik/partners_06.csv
          :widths: 10, 20, 20, 20, 20 ,20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20
 
     - .. csv-table:: Справочник торговых сетей Украина
