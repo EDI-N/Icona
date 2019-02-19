@@ -23,3 +23,11 @@
 
 
 
+.. fufu:
+.. image:: csvshnik/pic/ORDER.png
+
+просто текст бам
+.. image:: csvshnik/pic/ORDER.png
+картинка!!
+
+
