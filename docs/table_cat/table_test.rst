@@ -25,7 +25,7 @@ interesting
 
 
 
-.. fufu:
+.. _fufu:
 .. image:: csvshnik/pic/ORDER.png
 
 просто текст бам
