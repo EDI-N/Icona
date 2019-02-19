@@ -37,10 +37,17 @@ interesting а потом он говорит 12345pagulat__
 а тут я ее пробу вызвать:
 
 
-.. _12345pagulat:
+.. _pagulat:
 
 .. image:: csvshnik/pic/ORDER.png
 
+силами Чупакабры вызываю тебя: pagulat_
+картинка появись!!!!!
+
+pagulat_
+
+
+ураааа!!!!
 
 
 
