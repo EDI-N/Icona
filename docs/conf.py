@@ -20,6 +20,7 @@ import os
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 # -- General configuration ------------------------------------------------
 
@@ -31,13 +32,15 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx',
+    'edit_on_github'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['ntemplates']
 
 # добавил для возможности использования файлов .md
-from recommonmark.parser import CommonMarkParser
+# from recommonmark.parser import CommonMarkParser
 
 source_parsers = {
    '.md': 'recommonmark.parser.CommonMarkParser',
