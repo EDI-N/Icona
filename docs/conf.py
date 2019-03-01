@@ -42,9 +42,9 @@ templates_path = ['ntemplates']
 # добавил для возможности использования файлов .md
 # from recommonmark.parser import CommonMarkParser
 
-source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
-}
+#source_parsers = {
+#   '.md': 'recommonmark.parser.CommonMarkParser',
+#}
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -76,7 +76,7 @@ release = '0.0.1'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = ['ru', 'uk_UA', 'en']
+language = "en_US"
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:

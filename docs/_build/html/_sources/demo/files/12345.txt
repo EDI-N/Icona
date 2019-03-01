@@ -1,0 +1,21 @@
+********
+So what
+********
+
+
+Допутим.... допустим
+Название поля,Тип,Формат,Описание
+**ACT**, , ,Начало документа
+
+
+
+.. image:: some_pics/corrected.jpg
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+
+
+.. csv-table:: Таблица давай!!!
+  :file: newCSV.csv
+  :widths:  40, 7, 12, 41
+  :header-rows: 1
