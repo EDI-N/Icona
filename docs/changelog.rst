@@ -5,3 +5,5 @@ Changelog
 
 Previous releases
 -----------------
+
+продолжение следует
