@@ -1,10 +1,8 @@
 .. include:: ../README.rst
 
 
-.. tip:: This is the documentation for the stable 3.0 branch.
-         Looking for the documentation of the current **development** branch?
-         `Have a look here <http://docs.godotengine.org/en/latest>`_.
-         For the stable 2.1 branch, `it's here <http://docs.godotengine.org/en/2.1>`_.
+.. tip:: Привет, это уведомление говорит о том, что ты смотришь на документацию платформы 1.0. Но если ты уже перешел на EDIN 2.0 то тебе нужно сотреть на `эту документацию <https://icona.readthedocs.io/en/2.0/>`_.
+
 
 
 .. toctree::  
