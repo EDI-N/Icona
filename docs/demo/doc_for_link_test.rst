@@ -1,6 +1,3 @@
-
-.. _toggle-header:
-
 ######################
 Не забываем о названии
 ######################
@@ -67,16 +64,5 @@ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 Предполагаю, что далее может ничего без названия не отображаться:
 
 .. include:: without_name.rst
-
-
-
-
-.. toggle-header::
-    :header: Example 1 **Show/Hide Code**
-
-        Content for header
-        
-        
-
 
 
