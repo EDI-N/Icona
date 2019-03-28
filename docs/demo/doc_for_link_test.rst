@@ -68,3 +68,13 @@ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 
 
 
+
+.. toggle-header::
+    :header: Example 1 **Show/Hide Code**
+
+        Content for header
+        
+        
+
+
+
