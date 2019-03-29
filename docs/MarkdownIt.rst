@@ -1,7 +1,7 @@
 
-*******
+====================
 Здрасте
-*******
+====================
 
 Подраздел примерчика
 ====================
@@ -33,7 +33,7 @@ ___
 
 ---
 
-***
+
 
 
 ## Typographic replacements
@@ -57,7 +57,7 @@ __This is bold text__
 
 *This is italic text*
 
-_This is italic text_
+
 
 ~~Strikethrough~~
 
@@ -77,8 +77,8 @@ Unordered
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
   - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
+    Ac tristique libero volutpat at
+    Facilisis in pretium nisl aliquet
     - Nulla volutpat aliquam velit
 + Very easy!
 
@@ -118,13 +118,13 @@ Sample text here...
 
 Syntax highlighting
 
-``` js
-var foo = function (bar) {
-  return bar++;
-};
 
-console.log(foo(5));
-```
+
+
+
+
+
+
 
 ## Tables
 
@@ -245,10 +245,7 @@ This is HTML abbreviation example.
 
 It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
-*[HTML]: Hyper Text Markup Language
+Hyper Text Markup Language
 
 ### [Custom containers](https://github.com/markdown-it/markdown-it-container)
 
-::: warning
-*here be dragons*
-:::
