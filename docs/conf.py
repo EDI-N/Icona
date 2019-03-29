@@ -15,9 +15,6 @@ import sys
 import os
 
 
-sys.path.append(os.path.abspath('..'))
-sys.path.append(os.path.abspath('./demo/'))
-
 
 from sphinx_rtd_theme import __version__
 
