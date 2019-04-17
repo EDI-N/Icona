@@ -15,7 +15,7 @@
 +-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | **Параметры, передаваемые в URL (вместе с адресом метода)** | В строке заголовка (Header) "Set-Cookie" обязательно передается **SID** - токен полученный при авторизации                          |
 |                                                             |                                                                                                                                     |
-|                                                             | Обязательные url-параметры:                                                                                                         |
+|                                                             | **Обязательные url-параметры:**                                                                                                     |
 |                                                             |                                                                                                                                     |
 |                                                             | **gln** - строка(13); номер GLN организации, которая связана с авторизированным пользователем платформы EDIN 2.0 на уровне аккаунта |
 |                                                             |                                                                                                                                     |
@@ -114,55 +114,53 @@ JSON-параметры в теле HTTP **запроса/ответа**
     .. tab-container:: tab1
         :title: Пример тела **запроса** (json)
 
-        .. code:: ruby
+        .. code-block:: python
 
-                { 
-                    "direction": {
-                        "receiver": [
-                            "9864065703464"
-                        ],
-                        "sender": [
-                            "9864065702429"
-                        ],
-                        "type": "IN"
-                    },
-                    "statuses": [
-                        0
-                    ],
-                    "type":[
-                        {
-                            "type" : 0
-                        }
-                    ],
-                    "limit":{
-                        "offset":"0",
-                        "count":"3"
-                    },
-                    "family":1,
-                    "number":"com222",
-                    "docDate":{
-                        "startTimestamp":"0",
-                        "finishTimestamp":"1505497243"
-                    },
-                    "docCreate":{
-                        "startTimestamp":"1505307243",
-                        "finishTimestamp":"1505497243"
-                    },
-                    "docRead":{
-                        "startTimestamp":"0",
-                        "finishTimestamp":"1505497243"
-                    },
-                    "docChanged":{
-                        "startTimestamp":"1505307243",
-                        "finishTimestamp":"1505497243"
-                    },
-                    "exchangeStatus":[]
-                }
+            my_api.signin()
 
     .. tab-container:: tab2
         :title: Пример тела **ответа** (json)
 
         Content for tab two
+
+--------------
+
+.. content-tabs::
+
+    .. tab-container:: python
+        :title: Python
+
+        .. rubric:: Definition
+
+        .. code-block:: python
+
+            my_api.signin()
+
+        .. rubric:: Example request
+
+        .. code-block:: python
+
+            import my_api
+            my_api.signin('username', 'password')
+
+
+    .. tab-container:: php
+        :title: PHP
+
+        .. rubric:: Definition
+
+        .. code-block:: php
+
+            MyApi::signin();
+
+        .. rubric:: Example request
+
+        .. code-block:: php
+
+            include 'my-api.php';
+            MyApi::signin('username', 'password');
+
+
 
 
 
