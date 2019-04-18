@@ -52,6 +52,14 @@
 
 Предшествует текст |армагедон| после этого все фильтры будут сброшены.
 
+Вставляю сюда маркдаун:
+
+.. include:: files/davai_import.md
+
+
+далее тект для проверки вставки маркдауна
+
+
 .. include:: files/12345.rst
 
 Если хочешь добавить документ в документ: http://docutils.sourceforge.net/docs/ref/rst/directives.html#miscellaneous
