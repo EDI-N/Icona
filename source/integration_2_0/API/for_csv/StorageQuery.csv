@@ -5,7 +5,7 @@
 **type**,M,**List<XDocType>**,"массив объектов; список типов документов: 0 - все типы,    1 / 2 / 3 ... и более - конкретный тип документа"
 **statuses**,M,**List<Integer>**,"массив; список статусов (состояний) документов, по которым будет происходить отбор:    0 - все    1 - open    2 - sent    3 - delivered    4 - inbox    5 - read    6 - error    7 - deleted"
 **tags**, ,**List<Long>**,массив; тег
-**exchangeStatus**,O,**List<Integer>**,массив; статус документооборота (суть но __не значения__ **index_intsubstatusid**>>url:https://xwiki.edi.su/bin/view/Tables/Exite_Tables/exite_ru/index_intsubstatusid/]](%%) )
+**exchangeStatus**,O,**List<Integer>**,массив; статус документооборота (суть но __не значения__ **index_intsubstatusid**)
 **docs**, ,**List<Long>**,массив; документы
 **direction**,M,**Direction**,"объект; направление документооборота; указываются отправитель, получатель и связь между ними в критериях отбора документов "
 **limit**,O,**Limitation**,объект; фильтр отбора (настройки вывода данных)
