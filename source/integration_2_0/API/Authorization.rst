@@ -35,8 +35,10 @@
 При успешной авторизации получаем в ответ "токен" (например, ``'SID=65daca25-74ba-4c85-8183-71b404a348c0'`` ), необходимый для дальнейшей работы.
 
 --------------
+
 .. hint:: Также возможно выполнить запрос в виде curl-строки:
-          curl -X POST 'https://edo-v2.edi-n.com/api/oas/authorization' -d 'email=uaEDSsender&password=111&api_key=66B4814DEC28B4CA17DE56338A52D7DB'
+    
+    curl -X POST 'https://edo-v2.edi-n.com/api/oas/authorization' -d 'email=uaEDSsender&password=111&api_key=66B4814DEC28B4CA17DE56338A52D7DB'
 
 Спецификация для расшифровки ключей curl запроса: https://curl.haxx.se/docs/manpage.html
 

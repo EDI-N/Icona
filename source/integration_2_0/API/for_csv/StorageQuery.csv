@@ -1,25 +1,25 @@
 Параметр,Тип_,Формат,Описание
 .. _StorageQuery: ,, Объект **StorageQuery** ,
-**extraParams**, ,**List<ExtraQueryParameters>**,массив объектов;
-**multiExtraParams**, ,**List<ExtraQueryParameters>**,массив объектов;
-**type**,M,**List<XDocType>**,"массив объектов; список типов документов: 0 - все типы,    1 / 2 / 3 ... и более - конкретный тип документа"
+**extraParams**, ,List<ExtraQueryParameters_>,массив объектов;
+**multiExtraParams**, ,List<ExtraQueryParameters_>,массив объектов;
+**type**,M,List<XDocType>,"массив объектов; список типов документов: 0 - все типы,    1 / 2 / 3 ... и более - конкретный тип документа"
 **statuses**,M,**List<Integer>**,"массив; список статусов (состояний) документов, по которым будет происходить отбор:    0 - все    1 - open    2 - sent    3 - delivered    4 - inbox    5 - read    6 - error    7 - deleted"
 **tags**, ,**List<Long>**,массив; тег
-**exchangeStatus**,O,**List<Integer>**,массив; статус документооборота (суть но __не значения__ **index_intsubstatusid**)
+**exchangeStatus**,O,**List<Integer>**,массив; статус документооборота (суть но не значения **index_intsubstatusid**)
 **docs**, ,**List<Long>**,массив; документы
-**direction**,M,**Direction**,"объект; направление документооборота; указываются отправитель, получатель и связь между ними в критериях отбора документов "
-**limit**,O,**Limitation**,объект; фильтр отбора (настройки вывода данных)
-**orderBy**, ,**OrderBy**,объект; привязка к заказу
+**direction**,M,Direction_,"объект; направление документооборота; указываются отправитель, получатель и связь между ними в критериях отбора документов "
+**limit**,O,Limitation_,объект; фильтр отбора (настройки вывода данных)
+**orderBy**, ,OrderBy_,объект; привязка к заказу
 groupBy, ,String,привязка к группе
 number,O,String,номер документа
 family,O,int,семейство (EDI / UZD); возможные значения:    1 - edi    2 - uzd    3 - reports    4 - certificats    5 - factoring
 partnerId, ,Long,id розничной сети
 chainHash, ,String,"хэш-значение, полученное в результате обработки цепочки"
 docHash, ,String,"хэш-значение, полученное в результате обработки документа"
-**docDate**,O,**DateTimeRange**,объект; дата указанная в документе (в формате UNIX-timestamp) с / по
-**docCreate**,O,**DateTimeRange**,объект; дата создания документа (в формате UNIX-timestamp) с / по
-**docRead**,O,**DateTimeRange**,объект; дата прочтения документа (в формате UNIX-timestamp) с / по
-**docChanged**,O,**DateTimeRange**,объект; дата последнего изменения документа (в формате UNIX-timestamp) с / по
+**docDate**,O,DateTimeRange_,объект; дата указанная в документе (в формате UNIX-timestamp) с / по
+**docCreate**,O,DateTimeRange_,объект; дата создания документа (в формате UNIX-timestamp) с / по
+**docRead**,O,DateTimeRange_,объект; дата прочтения документа (в формате UNIX-timestamp) с / по
+**docChanged**,O,DateTimeRange_,объект; дата последнего изменения документа (в формате UNIX-timestamp) с / по
 archive, ,Boolean,флаг наличия архивного признака документа
 important, ,boolean,"флаг наличия отметки ""важный"" документ"
 visible, ,boolean,флаг видимости
@@ -33,7 +33,7 @@ loadChain, ,boolean,флаг наличия цепочки документов
 **type**,M,"enum (EQUALS, EQUALS_UUID, EQUALS_MD5, LIKE, MORE, MORE_EQ, LESS, LESS_EQ, IN)",
 fieldName, ,String, 
 value, ,String, 
-.. _XDocType: ,, Объект **XDocType** ,
+,, Объект **XDocType** ,
 type, ,int,id типа документа/квитанции
 title, ,String,название документа/квитанции
 description, ,String,описание документа/квитанции (наименование на русском)
