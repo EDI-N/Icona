@@ -84,4 +84,16 @@ type,String,тип вложения
 base64content,String,содержание вложения в BASE64
 content,byte[],содержание вложения в целочисленном виде
 .. _XDocBodyForms: ,**Объект XDocBodyForms** ,
-forms,"HashMap<String, XDocBody>",массив объектов; тело документа
+forms,"HashMap<String, XDocBody_>",массив объектов; тело документа
+.. _XDocBody: ,**Объект XDocBody** ,
+type,XDocBodyType_ ,"объект; тип тела документа:
+CONTENT = 1; - содержание в байтах
+JSON = 2; - содержание в json формате
+SIGN = 3; - содержание подписи
+STAMP = 4;
+CRYPTED = 5; - содержание в зашифрованном виде
+UZDRESPONSE = 6;"
+base64content,String,содержание тела документа в BASE64
+.. _XDocBodyType: ,**Объект XDocBodyType** ,
+id,int,id типа тела документа
+name,String,наименование типа тела документа

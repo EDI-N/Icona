@@ -2,7 +2,7 @@
 .. _ExtraQueryParameters: ,, Объект **ExtraQueryParameters**,
 **operator**, ,"enum (AND, OR)", 
 **type**,M,"enum (EQUALS, EQUALS_UUID, EQUALS_MD5, LIKE, MORE, MORE_EQ, LESS, LESS_EQ, IN)",
-fieldName_ , ,String, 
+fieldName_ , ,String, описание доступных параметров параметров в таблице 3
 value, ,String, 
 ,, Объект **XDocType** ,
 type, ,int,id типа документа/квитанции
