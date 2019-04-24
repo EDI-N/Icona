@@ -45,43 +45,65 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
+Таблица 3 - Описание параметров объекта **ExtraQueryParameters**)
 
 .. csv-table:: 
   :file: for_csv/ExtraQueryParameters.csv
   :widths:  1, 7, 12, 41
   :header-rows: 1
-  :stub-columns: 1
+  :stub-columns: 0
 
+Таблица 4 - Описание параметров объекта **Direction**)
 
 .. csv-table:: 
   :file: for_csv/Direction.csv
   :widths:  1, 7, 12, 41
   :header-rows: 1
-  :stub-columns: 1
+  :stub-columns: 0
 
+Таблица 5 - Описание параметров объекта **Limitation**)
 
 .. csv-table:: 
   :file: for_csv/Limitation.csv
   :widths:  1, 7, 12, 41
   :header-rows: 1
-  :stub-columns: 1
+  :stub-columns: 0
 
+Таблица 6 - Описание параметров объекта **DateTimeRange**)
 
 .. csv-table:: 
   :file: for_csv/DateTimeRange.csv
   :widths:  1, 7, 12, 41
   :header-rows: 1
-  :stub-columns: 1
+  :stub-columns: 0
+
+Таблица 7 - Описание параметров объекта **XDocType**)
+
+.. csv-table:: 
+  :file: for_csv/XDocType.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
+  :stub-columns: 0
 
 .. _fieldName:
 
-Таблица 3 - Описание **fieldName** параметров (объект ExtraQueryParameters_)
+Таблица 8 - Описание **fieldName** параметров (объект ExtraQueryParameters_)
 
 .. csv-table:: 
   :file: for_csv/extra_fields.csv
   :widths:  1, 7, 12, 41
   :header-rows: 1
-  :stub-columns: 1
+  :stub-columns: 0
+
+.. _описание_параметров:
+
+Таблица 9 - Описание **DocType** параметров (объект XDocType_)
+
+.. csv-table:: 
+  :file: for_csv/xdoctype_p.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
 
 .. _Тип:
 
@@ -89,13 +111,110 @@ JSON-параметры в теле HTTP **запроса/ответа**
 
 --------------
 
-Таблица 4 - Описание json-параметров, которые могут передаваться в **ответ** на метод API
+Таблица 10 - Описание json-параметров, которые могут передаваться в **ответ** на метод API
 
 .. csv-table:: 
   :file: for_csv/XDoc+.csv
   :widths:  1, 19, 41
   :header-rows: 1
-  :stub-columns: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocStatus**)
+
+.. csv-table:: 
+  :file: for_csv/XDocStatus.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDoc**)
+
+.. csv-table:: 
+  :file: for_csv/XDoc.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XTag**)
+
+.. csv-table:: 
+  :file: for_csv/XTag.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XStatus**)
+
+.. csv-table:: 
+  :file: for_csv/XStatus.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocSignInfo**)
+
+.. csv-table:: 
+  :file: for_csv/XDocSignInfo.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocCommentsList**)
+
+.. csv-table:: 
+  :file: for_csv/XDocCommentsList.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocComment**)
+
+.. csv-table:: 
+  :file: for_csv/XDocComment.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocAttachment**)
+
+.. csv-table:: 
+  :file: for_csv/XDocAttachment.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocBodyForms**)
+
+.. csv-table:: 
+  :file: for_csv/XDocBodyForms.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocBody**)
+
+.. csv-table:: 
+  :file: for_csv/XDocBody.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocBodyType**)
+
+.. csv-table:: 
+  :file: for_csv/XDocBodyType.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 12 - Описание **DocStatus** параметров (объект XDocStatus_)
+
+.. csv-table:: 
+  :file: for_csv/xdocstatus_p.csv
+  :widths:  1, 60
+  :header-rows: 1
+  :stub-columns: 0
+
 
 --------------
 
