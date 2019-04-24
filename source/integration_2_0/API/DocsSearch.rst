@@ -43,6 +43,44 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :file: for_csv/StorageQuery.csv
   :widths:  1, 7, 12, 41
   :header-rows: 1
+  :stub-columns: 0
+
+
+.. csv-table:: 
+  :file: for_csv/ExtraQueryParameters.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
+  :stub-columns: 1
+
+
+.. csv-table:: 
+  :file: for_csv/Direction.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
+  :stub-columns: 1
+
+
+.. csv-table:: 
+  :file: for_csv/Limitation.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
+  :stub-columns: 1
+
+
+.. csv-table:: 
+  :file: for_csv/DateTimeRange.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
+  :stub-columns: 1
+
+.. _fieldName:
+
+Таблица 3 - Описание **fieldName** параметров (объект ExtraQueryParameters_)
+
+.. csv-table:: 
+  :file: for_csv/extra_fields.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
   :stub-columns: 1
 
 .. _Тип:
