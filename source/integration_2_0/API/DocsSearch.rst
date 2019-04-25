@@ -50,7 +50,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 3 - Описание параметров объекта **ExtraQueryParameters**)
+Таблица 3 - Описание параметров объекта **ExtraQueryParameters**
 
 .. csv-table:: 
   :file: for_csv/ExtraQueryParameters.csv
@@ -58,7 +58,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 4 - Описание параметров объекта **Direction**)
+Таблица 4 - Описание параметров объекта **Direction**
 
 .. csv-table:: 
   :file: for_csv/Direction.csv
@@ -66,7 +66,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 5 - Описание параметров объекта **Limitation**)
+Таблица 5 - Описание параметров объекта **Limitation**
 
 .. csv-table:: 
   :file: for_csv/Limitation.csv
@@ -74,7 +74,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 6 - Описание параметров объекта **DateTimeRange**)
+Таблица 6 - Описание параметров объекта **DateTimeRange**
 
 .. csv-table:: 
   :file: for_csv/DateTimeRange.csv
@@ -82,7 +82,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 7 - Описание параметров объекта **XDocType**)
+Таблица 7 - Описание параметров объекта **XDocType**
 
 .. csv-table:: 
   :file: for_csv/XDocType.csv
@@ -128,7 +128,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocStatus**)
+Таблица 11 - Описание параметров объекта **XDocStatus**
 
 .. csv-table:: 
   :file: for_csv/XDocStatus.csv
@@ -136,7 +136,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 12 - Описание параметров объекта **XDoc**)
+Таблица 12 - Описание параметров объекта **XDoc**
 
 .. csv-table:: 
   :file: for_csv/XDoc.csv
@@ -144,7 +144,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 13 - Описание параметров объекта **XTag**)
+Таблица 13 - Описание параметров объекта **XTag**
 
 .. csv-table:: 
   :file: for_csv/XTag.csv
@@ -152,7 +152,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 14 - Описание параметров объекта **XStatus**)
+Таблица 14 - Описание параметров объекта **XStatus**
 
 .. csv-table:: 
   :file: for_csv/XStatus.csv
@@ -160,7 +160,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 15 - Описание параметров объекта **XDocSignInfo**)
+Таблица 15 - Описание параметров объекта **XDocSignInfo**
 
 .. csv-table:: 
   :file: for_csv/XDocSignInfo.csv
@@ -168,7 +168,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 16 - Описание параметров объекта **XDocCommentsList**)
+Таблица 16 - Описание параметров объекта **XDocCommentsList**
 
 .. csv-table:: 
   :file: for_csv/XDocCommentsList.csv
@@ -176,7 +176,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 17 - Описание параметров объекта **XDocComment**)
+Таблица 17 - Описание параметров объекта **XDocComment**
 
 .. csv-table:: 
   :file: for_csv/XDocComment.csv
@@ -184,7 +184,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 18 - Описание параметров объекта **XDocAttachment**)
+Таблица 18 - Описание параметров объекта **XDocAttachment**
 
 .. csv-table:: 
   :file: for_csv/XDocAttachment.csv
@@ -192,7 +192,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 19 - Описание параметров объекта **XDocBodyForms**)
+Таблица 19 - Описание параметров объекта **XDocBodyForms**
 
 .. csv-table:: 
   :file: for_csv/XDocBodyForms.csv
@@ -200,7 +200,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 20 - Описание параметров объекта **XDocBody**)
+Таблица 20 - Описание параметров объекта **XDocBody**
 
 .. csv-table:: 
   :file: for_csv/XDocBody.csv
@@ -208,7 +208,7 @@
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 21 - Описание параметров объекта **XDocBodyType**)
+Таблица 21 - Описание параметров объекта **XDocBodyType**
 
 .. csv-table:: 
   :file: for_csv/XDocBodyType.csv
