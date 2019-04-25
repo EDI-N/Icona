@@ -59,6 +59,131 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 1
 
+Таблица 5 - Описание параметров объекта **XChainStatus**)
+
+.. csv-table:: 
+  :file: for_csv/XChainStatus.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 1
+
+Таблица 6 - Описание параметров объекта **XDocStatus**)
+
+.. csv-table:: 
+  :file: for_csv/XDocStatus.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 7 - Описание параметров объекта **XDoc**)
+
+.. csv-table:: 
+  :file: for_csv/XDoc.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 8 - Описание параметров объекта **XTag**)
+
+.. csv-table:: 
+  :file: for_csv/XTag.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 9 - Описание параметров объекта **XStatus**)
+
+.. csv-table:: 
+  :file: for_csv/XStatus.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 10 - Описание параметров объекта **XDocSignInfo**)
+
+.. csv-table:: 
+  :file: for_csv/XDocSignInfo.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 11 - Описание параметров объекта **XDocCommentsList**)
+
+.. csv-table:: 
+  :file: for_csv/XDocCommentsList.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 12 - Описание параметров объекта **XDocComment**)
+
+.. csv-table:: 
+  :file: for_csv/XDocComment.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 13 - Описание параметров объекта **XDocAttachment**)
+
+.. csv-table:: 
+  :file: for_csv/XDocAttachment.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 14 - Описание параметров объекта **XDocBodyForms**)
+
+.. csv-table:: 
+  :file: for_csv/XDocBodyForms.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 15 - Описание параметров объекта **XDocBody**)
+
+.. csv-table:: 
+  :file: for_csv/XDocBody.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 16 - Описание параметров объекта **XDocBodyType**)
+
+.. csv-table:: 
+  :file: for_csv/XDocBodyType.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 17 - Описание параметров объекта **XDocType**)
+
+.. csv-table:: 
+  :file: for_csv/XDocType.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+.. _подробнее:
+
+Таблица 18 - Описание **DocStatus** параметров (объект XDocStatus_)
+
+.. csv-table:: 
+  :file: for_csv/xdocstatus_p.csv
+  :widths:  1, 60
+  :header-rows: 1
+  :stub-columns: 0
+
+.. _описание_параметров:
+
+Таблица 19 - Описание **DocType** параметров (объект XDocType_)
+
+.. csv-table:: 
+  :file: for_csv/xdoctype_p.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+
 --------------
 
 Примеры
