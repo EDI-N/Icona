@@ -2,7 +2,7 @@ API
 ###########
 
 .. toctree::
-    :maxdepth: 0
+   :titlesonly:
    
    Authorization
    DocsSearch

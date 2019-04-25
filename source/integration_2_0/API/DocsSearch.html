@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
-<title>Поиск документов (с фильтрацией),выбор списка документов</title>
+<title>Поиск документов (с фильтрацией), выбор списка документов</title>
 <style type="text/css">
 
 /*
@@ -339,7 +339,7 @@ ul.auto-toc {
 </head>
 <body>
 <div class="document" id="id1">
-<h1 class="title">Поиск документов (с фильтрацией),выбор списка документов</h1>
+<h1 class="title">Поиск документов (с фильтрацией), выбор списка документов</h1>
 
 <p>Для работы с этим методом пользователь должен быть <a class="reference external" href="https://ссылканаавторизацию">авторизированным</a> .</p>
 <p>С помощью метода <strong>api/eds/docs/search</strong> можно быстро совершить поиск по заданым критериям, например, получить список документов с определенным статусом, или за промежуток времени.</p>
@@ -369,7 +369,7 @@ ul.auto-toc {
 </tr>
 </tbody>
 </table>
-<p><strong>Внимание:</strong> В запросе в теле json присутствуют обязательные (должны передаваться) и опциональные параметры (колонка <a class="reference internal" href="#id3">Тип</a>).</p>
+<p><strong>Внимание:</strong> В запросе в теле json присутствуют обязательные (должны передаваться) и опциональные параметры (колонка <a class="reference internal" href="#id4">Тип</a>).</p>
 <div class="hint">
 <p class="first admonition-title">Hint</p>
 <p>Также возможно выполнить запрос в виде curl-строки:</p>
@@ -389,7 +389,7 @@ ul.auto-toc {
 </colgroup>
 <thead valign="bottom">
 <tr><th class="head">Параметр</th>
-<th class="head"><a class="reference internal" href="#id3">Тип</a></th>
+<th class="head"><a class="reference internal" href="#id4">Тип</a></th>
 <th class="head">Формат</th>
 <th class="head">Описание</th>
 </tr>
@@ -703,7 +703,7 @@ ul.auto-toc {
 <tr><td></td>
 <td id="xdoctype">&nbsp;</td>
 <td>Объект <strong>XDocType</strong></td>
-<td><a href="#id5"><span class="problematic" id="id6">описание_параметров_</span></a></td>
+<td><a class="reference internal" href="#id3">описание_параметров</a></td>
 </tr>
 <tr><td>type</td>
 <td>&nbsp;</td>
@@ -1155,9 +1155,221 @@ ul.auto-toc {
 </tr>
 </tbody>
 </table>
-<p id="id3"><strong>*Тип*</strong> поля: <strong>M</strong> - mandatory (обязательное к заполнению), <strong>O</strong> - optional (опциональное)</p>
+<p id="id3">Таблица 9 - Описание <strong>DocType</strong> параметров (объект <a class="reference internal" href="#xdoctype">XDocType</a>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">типа документа/квитанции</th>
+<th class="head">название документа/квитанции</th>
+<th class="head">описание документа/квитанции (наименование на русском)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>0</td>
+<td>all</td>
+<td>all</td>
+</tr>
+<tr><td>1</td>
+<td>invoice</td>
+<td>Счет</td>
+</tr>
+<tr><td>2</td>
+<td>orders</td>
+<td>Заказ</td>
+</tr>
+<tr><td>3</td>
+<td>recadv</td>
+<td>Уведомление о приеме</td>
+</tr>
+<tr><td>4</td>
+<td>desadv</td>
+<td>Уведомление об отгрузке</td>
+</tr>
+<tr><td>5</td>
+<td>ordrsp</td>
+<td>Подтверждение заказа</td>
+</tr>
+<tr><td>6</td>
+<td>pricat</td>
+<td>Прайс-лист</td>
+</tr>
+<tr><td>10</td>
+<td>declar</td>
+<td>Налоговая накладная</td>
+</tr>
+<tr><td>11</td>
+<td>insdes</td>
+<td>Инструкция по доставке</td>
+</tr>
+<tr><td>12</td>
+<td>desscc</td>
+<td>Уведомление об отгрузке для распределительного центра</td>
+</tr>
+<tr><td>13</td>
+<td>slsrpt</td>
+<td>Отчет о продажах</td>
+</tr>
+<tr><td>14</td>
+<td>invrpt</td>
+<td>Отчет об инвентаризации</td>
+</tr>
+<tr><td>15</td>
+<td>coacsu</td>
+<td>Акт сверки взаиморасчетов</td>
+</tr>
+<tr><td>16</td>
+<td>actset</td>
+<td>Акт взаимозачета</td>
+</tr>
+<tr><td>17</td>
+<td>iftmin</td>
+<td>Инструкция о транспортировке</td>
+</tr>
+<tr><td>18</td>
+<td>retann</td>
+<td>Уведомление о возврате</td>
+</tr>
+<tr><td>19</td>
+<td>iftmbf</td>
+<td>Заказ транспортировки</td>
+</tr>
+<tr><td>20</td>
+<td>partin</td>
+<td>Информация о контрагенте</td>
+</tr>
+<tr><td>21</td>
+<td>mscons</td>
+<td>Отчет о предоставленых услугах</td>
+</tr>
+<tr><td>25</td>
+<td>retins</td>
+<td>Инструкция о возврате</td>
+</tr>
+<tr><td>27</td>
+<td>alcdes</td>
+<td>Уведомление об отгрузке для алкогольной продукции</td>
+</tr>
+<tr><td>28</td>
+<td>comdoc</td>
+<td>Коммерческий документ</td>
+</tr>
+<tr><td>29</td>
+<td>declarj12</td>
+<td>Корректировка к налоговой накладной</td>
+</tr>
+<tr><td>30</td>
+<td>condra</td>
+<td>Не структурированный документ</td>
+</tr>
+<tr><td>32</td>
+<td>reestr</td>
+<td>Реестр</td>
+</tr>
+<tr><td>38</td>
+<td>report</td>
+<td>Отчет</td>
+</tr>
+<tr><td>40</td>
+<td>prodlist</td>
+<td>Спецификация (Новус)</td>
+</tr>
+<tr><td>41</td>
+<td>agreem</td>
+<td>Товарное согласование</td>
+</tr>
+<tr><td>42</td>
+<td>iftmbc</td>
+<td>Подтверждение заказа транспортировки</td>
+</tr>
+<tr><td>50</td>
+<td>swedrep</td>
+<td>Запрос в ЕРНН</td>
+</tr>
+<tr><td>51</td>
+<td>swedreq</td>
+<td>Запрос в SWED</td>
+</tr>
+<tr><td>56</td>
+<td>dopcert</td>
+<td>Дополнительный файл серт.</td>
+</tr>
+<tr><td>58</td>
+<td>factsupplyact</td>
+<td>Акт закрытия поставки</td>
+</tr>
+<tr><td>59</td>
+<td>documentinvoice</td>
+<td>Товарная накладная</td>
+</tr>
+<tr><td>60</td>
+<td>supplyinfo</td>
+<td>Информация о поставке</td>
+</tr>
+<tr><td>67</td>
+<td>doccorinvoice</td>
+<td>doccorinvoice</td>
+</tr>
+<tr><td>70</td>
+<td>invitation</td>
+<td>invitation</td>
+</tr>
+<tr><td>75</td>
+<td>waybill</td>
+<td>ТТН</td>
+</tr>
+<tr><td>78</td>
+<td>udtnotif</td>
+<td>udtnotif</td>
+</tr>
+<tr><td>79</td>
+<td>addbill</td>
+<td>addbill</td>
+</tr>
+<tr><td>81</td>
+<td>findoc</td>
+<td>findoc</td>
+</tr>
+<tr><td>87</td>
+<td>report_declar</td>
+<td>report_declar</td>
+</tr>
+<tr><td>88</td>
+<td>report_declarj12</td>
+<td>report_declarj12</td>
+</tr>
+<tr><td>94</td>
+<td>declar_confirm</td>
+<td>Подтверждение</td>
+</tr>
+<tr><td>95</td>
+<td>declar_reject</td>
+<td>Отказ</td>
+</tr>
+<tr><td>96</td>
+<td>metro_request</td>
+<td>metro_request</td>
+</tr>
+<tr><td>97</td>
+<td>metro_extract</td>
+<td>metro_extract</td>
+</tr>
+<tr><td>98</td>
+<td>quotes</td>
+<td>Приложение к ув.об отгрузке</td>
+</tr>
+<tr><td>103</td>
+<td>condranew</td>
+<td>Не структурированный документ</td>
+</tr>
+</tbody>
+</table>
+<p id="id4"><strong>*Тип*</strong> поля: <strong>M</strong> - mandatory (обязательное к заполнению), <strong>O</strong> - optional (опциональное)</p>
 <hr class="docutils" />
-<p>Таблица 9 - Описание json-параметров, которые могут передаваться в <strong>ответ</strong> на метод API</p>
+<p>Таблица 10 - Описание json-параметров, которые могут передаваться в <strong>ответ</strong> на метод API</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="2%" />
@@ -1179,6 +1391,50 @@ ul.auto-toc {
 <td>int</td>
 <td>количество документов</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 11 - Описание параметров объекта <strong>XDocStatus</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdocstatus"><strong>Объект XDocStatus</strong></td>
+<td><a class="reference internal" href="#id5">подробнее</a></td>
+</tr>
+<tr><td>state</td>
+<td>int</td>
+<td>id статуса</td>
+</tr>
+<tr><td>title</td>
+<td>String</td>
+<td>статус</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 12 - Описание параметров объекта <strong>XDoc</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdoc"><strong>Объект XDoc</strong></td>
 <td>&nbsp;</td>
@@ -1286,37 +1542,25 @@ ul.auto-toc {
 <tr><td>multiExtraFields</td>
 <td>Map&lt;String, List&lt;String&gt;&gt;</td>
 <td><blockquote class="first last">
-массив объектов; мультииндекс. Пример использования: {&quot;zzz;zzz;zzz&quot;} - обработка передаваемой строки =&gt; разбивка строки по &quot;;&quot; (условие) =&gt; индексирование каждого куска</blockquote>
+массив объектов; мультииндекс. Пример: {'key1': ['val1', 'val2'], 'key2': ['val1', 'val2']}. Используется, например для обработки передаваемой строки =&gt; разбивка строки по условию =&gt; индексирование каждого куска</blockquote>
 </td>
 </tr>
-<tr><td>&nbsp;</td>
-<td><strong>Объект XDocType</strong></td>
-<td>&nbsp;</td>
+</tbody>
+</table>
+<p>Таблица 13 - Описание параметров объекта <strong>XTag</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
 </tr>
-<tr><td>type</td>
-<td>int</td>
-<td>id типа документа/квитанции</td>
-</tr>
-<tr><td>title</td>
-<td>String</td>
-<td>название документа/квитанции</td>
-</tr>
-<tr><td>description</td>
-<td>String</td>
-<td>описание документа/квитанции (наименование на русском)</td>
-</tr>
-<tr><td></td>
-<td id="xdocstatus"><strong>Объект XDocStatus</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr><td>state</td>
-<td>int</td>
-<td>id статуса</td>
-</tr>
-<tr><td>title</td>
-<td>String</td>
-<td>статус</td>
-</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xtag"><strong>Объект XTag</strong></td>
 <td>&nbsp;</td>
@@ -1333,6 +1577,22 @@ ul.auto-toc {
 <td>String</td>
 <td>краткое наименование тега</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 14 - Описание параметров объекта <strong>XStatus</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xstatus"><strong>Объект XStatus</strong></td>
 <td>&nbsp;</td>
@@ -1353,6 +1613,22 @@ ul.auto-toc {
 <td>String</td>
 <td>содержание статуса</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 15 - Описание параметров объекта <strong>XDocSignInfo</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdocsigninfo"><strong>Объект XDocSignInfo</strong></td>
 <td>&nbsp;</td>
@@ -1377,6 +1653,22 @@ ul.auto-toc {
 <td>String</td>
 <td>хэш-значение, полученное в результате обработки</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 16 - Описание параметров объекта <strong>XDocCommentsList</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdoccommentslist"><strong>Объект XDocCommentsList</strong></td>
 <td>&nbsp;</td>
@@ -1385,6 +1677,22 @@ ul.auto-toc {
 <td>List&lt;<a class="reference internal" href="#xdoccomment">XDocComment</a>&gt;</td>
 <td>массив объектов; комментарии к документу</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 17 - Описание параметров объекта <strong>XDocComment</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdoccomment"><strong>Объект XDocComment</strong></td>
 <td>&nbsp;</td>
@@ -1409,6 +1717,22 @@ ul.auto-toc {
 <td>String</td>
 <td>содержание комментария</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 18 - Описание параметров объекта <strong>XDocAttachment</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdocattachment"><strong>Объект XDocAttachment</strong></td>
 <td>&nbsp;</td>
@@ -1441,6 +1765,22 @@ ul.auto-toc {
 <td>byte[]</td>
 <td>содержание вложения в целочисленном виде</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 19 - Описание параметров объекта <strong>XDocBodyForms</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdocbodyforms"><strong>Объект XDocBodyForms</strong></td>
 <td>&nbsp;</td>
@@ -1449,6 +1789,22 @@ ul.auto-toc {
 <td>HashMap&lt;String, <a class="reference internal" href="#xdocbody">XDocBody</a>&gt;</td>
 <td>массив объектов; тело документа</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 20 - Описание параметров объекта <strong>XDocBody</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdocbody"><strong>Объект XDocBody</strong></td>
 <td>&nbsp;</td>
@@ -1467,6 +1823,22 @@ UZDRESPONSE = 6;</td>
 <td>String</td>
 <td>содержание тела документа в BASE64</td>
 </tr>
+</tbody>
+</table>
+<p>Таблица 21 - Описание параметров объекта <strong>XDocBodyType</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
 <tr><td></td>
 <td id="xdocbodytype"><strong>Объект XDocBodyType</strong></td>
 <td>&nbsp;</td>
@@ -1481,9 +1853,62 @@ UZDRESPONSE = 6;</td>
 </tr>
 </tbody>
 </table>
+<p id="id5">Таблица 22 - Описание <strong>DocStatus</strong> параметров (объект <a class="reference internal" href="#xdocstatus">XDocStatus</a>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">id статуса</th>
+<th class="head">статус</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>0</td>
+<td>ALL - любой статус</td>
+</tr>
+<tr><td>1</td>
+<td>OPEN - черновик(отправитель)</td>
+</tr>
+<tr><td>2</td>
+<td>SENT - отправлен(отправитель)</td>
+</tr>
+<tr><td>3</td>
+<td>DELIVERED - прочитан(отправитель)</td>
+</tr>
+<tr><td>4</td>
+<td>INBOX - доставлен/входящий</td>
+</tr>
+<tr><td>5</td>
+<td>READ - прочитан(получатель)</td>
+</tr>
+<tr><td>6</td>
+<td>ERROR - ошибка</td>
+</tr>
+<tr><td>7</td>
+<td>DELETED - удален</td>
+</tr>
+<tr><td>8</td>
+<td>UID_SEND</td>
+</tr>
+<tr><td>9</td>
+<td>ARGMREFUSE</td>
+</tr>
+<tr><td>10</td>
+<td>SIGNREFUSE</td>
+</tr>
+<tr><td>50</td>
+<td>TEMPLATE</td>
+</tr>
+<tr><td>51</td>
+<td>CONFIRMED</td>
+</tr>
+</tbody>
+</table>
 </div>
 <hr class="docutils" />
-<div class="section" id="id4">
+<div class="section" id="id6">
 <h1>Примеры</h1>
 <p><strong>Пример тела запроса (json):</strong></p>
 <pre class="code ruby literal-block">
@@ -1587,12 +2012,6 @@ UZDRESPONSE = 6;</td>
     <span class="literal string double">&quot;totalCount&quot;</span><span class="punctuation">:</span> <span class="literal number integer">0</span>
 <span class="punctuation">}</span>
 </pre>
-</div>
-<div class="system-messages section">
-<h1>Docutils System Messages</h1>
-<div class="system-message" id="id5">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">for_csv/XDocType.csv</tt>, line 1); <em><a href="#id6">backlink</a></em></p>
-Unknown target name: &quot;описание_параметров&quot;.</div>
 </div>
 </div>
 </body>

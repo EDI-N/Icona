@@ -1,5 +1,5 @@
 ######################################################################
-Поиск документов (с фильтрацией),выбор списка документов
+Поиск документов (с фильтрацией), выбор списка документов
 ######################################################################
 
 Для работы с этим методом пользователь должен быть `авторизированным <https://ссылка на авторизацию>`__ .
@@ -127,7 +127,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDoc**)
+Таблица 12 - Описание параметров объекта **XDoc**)
 
 .. csv-table:: 
   :file: for_csv/XDoc.csv
@@ -135,7 +135,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XTag**)
+Таблица 13 - Описание параметров объекта **XTag**)
 
 .. csv-table:: 
   :file: for_csv/XTag.csv
@@ -143,7 +143,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XStatus**)
+Таблица 14 - Описание параметров объекта **XStatus**)
 
 .. csv-table:: 
   :file: for_csv/XStatus.csv
@@ -151,7 +151,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocSignInfo**)
+Таблица 15 - Описание параметров объекта **XDocSignInfo**)
 
 .. csv-table:: 
   :file: for_csv/XDocSignInfo.csv
@@ -159,7 +159,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocCommentsList**)
+Таблица 16 - Описание параметров объекта **XDocCommentsList**)
 
 .. csv-table:: 
   :file: for_csv/XDocCommentsList.csv
@@ -167,7 +167,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocComment**)
+Таблица 17 - Описание параметров объекта **XDocComment**)
 
 .. csv-table:: 
   :file: for_csv/XDocComment.csv
@@ -175,7 +175,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocAttachment**)
+Таблица 18 - Описание параметров объекта **XDocAttachment**)
 
 .. csv-table:: 
   :file: for_csv/XDocAttachment.csv
@@ -183,7 +183,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocBodyForms**)
+Таблица 19 - Описание параметров объекта **XDocBodyForms**)
 
 .. csv-table:: 
   :file: for_csv/XDocBodyForms.csv
@@ -191,7 +191,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocBody**)
+Таблица 20 - Описание параметров объекта **XDocBody**)
 
 .. csv-table:: 
   :file: for_csv/XDocBody.csv
@@ -199,7 +199,7 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 11 - Описание параметров объекта **XDocBodyType**)
+Таблица 21 - Описание параметров объекта **XDocBodyType**)
 
 .. csv-table:: 
   :file: for_csv/XDocBodyType.csv
@@ -207,7 +207,9 @@ JSON-параметры в теле HTTP **запроса/ответа**
   :header-rows: 1
   :stub-columns: 0
 
-Таблица 12 - Описание **DocStatus** параметров (объект XDocStatus_)
+.. _подробнее:
+
+Таблица 22 - Описание **DocStatus** параметров (объект XDocStatus_)
 
 .. csv-table:: 
   :file: for_csv/xdocstatus_p.csv
