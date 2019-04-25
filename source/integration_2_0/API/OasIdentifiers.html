@@ -376,11 +376,151 @@ ul.auto-toc {
 </div>
 <p>Спецификация для расшифровки ключей curl запроса: <a class="reference external" href="https://curl.haxx.se/docs/manpage.html">https://curl.haxx.se/docs/manpage.html</a></p>
 <hr class="docutils" />
-<div class="section" id="json-http">
-<h1>JSON-параметры в теле HTTP <strong>запроса/ответа</strong></h1>
+<p><strong>JSON-параметры в теле HTTP запроса/ответа</strong></p>
+<hr class="docutils" />
+<p><strong>REQUEST</strong></p>
+<hr class="docutils" />
 <p>В этом методе json-тело <strong>запроса</strong> отсутствует (другие данные передавать не нужно).</p>
 <hr class="docutils" />
+<p><strong>RESPONSE</strong></p>
+<hr class="docutils" />
 <p>Таблица 1 - Описание json-параметров, которые могут передаваться в <strong>ответ</strong> на метод API</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="identificator">Объект <strong>Identificator</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>guid</td>
+<td>String</td>
+<td>GUID организации</td>
+</tr>
+<tr><td>taxNum</td>
+<td>String</td>
+<td>Налоговый идентификационный номер; строка 50 символов</td>
+</tr>
+<tr><td>ndsNum</td>
+<td>String</td>
+<td>№ свидетельства НДС; строка 50 символов</td>
+</tr>
+<tr><td>manager</td>
+<td>String</td>
+<td>ФИО менеджера; строка 100 символов</td>
+</tr>
+<tr><td>accountant</td>
+<td>String</td>
+<td>ФИО бухгалтера; строка 100 символов</td>
+</tr>
+<tr><td>id</td>
+<td>long</td>
+<td>ID пользователя</td>
+</tr>
+<tr><td>gln</td>
+<td>String</td>
+<td>GLN организации, которая связана с авторизированным пользователем? ; строка 13 символов</td>
+</tr>
+<tr><td>companyId</td>
+<td>long</td>
+<td>id аккаунта; число</td>
+</tr>
+<tr><td>retailerId</td>
+<td>long</td>
+<td>id сети (ритейлера); число</td>
+</tr>
+<tr><td>name</td>
+<td>String</td>
+<td>название организации; строка 100 символов</td>
+</tr>
+<tr><td>companyType</td>
+<td>String</td>
+<td>форма собственности; строка 5 символов; jur - Юридическое лицо, fiz - Физическое лицо</td>
+</tr>
+<tr><td>companyInn</td>
+<td>String</td>
+<td>код ИНН компании; строка 50 символов</td>
+</tr>
+<tr><td>companyKpp</td>
+<td>String</td>
+<td>код ЕГРПОУ/КПП; строка 50 символов</td>
+</tr>
+<tr><td>companyOgrn</td>
+<td>String</td>
+<td>Основной Государственный Регистрационный Номер; строка 15 символов</td>
+</tr>
+<tr><td>companyTaxDepartmentID</td>
+<td>String</td>
+<td>идентификатор отделения налоговой инспекции</td>
+</tr>
+<tr><td>dirLastName</td>
+<td>String</td>
+<td>фамилия директора; строка 150 символов</td>
+</tr>
+<tr><td>dirFirstName</td>
+<td>String</td>
+<td>имя директора; строка 150 символов</td>
+</tr>
+<tr><td>apartment</td>
+<td>String</td>
+<td>квартира; строка 20 символов</td>
+</tr>
+<tr><td>zip</td>
+<td>String</td>
+<td>почтовый индекс; строка 20 символов</td>
+</tr>
+<tr><td>city</td>
+<td>String</td>
+<td>город; строка 50 символов</td>
+</tr>
+<tr><td>street</td>
+<td>String</td>
+<td>название улицы; строка 100 символов</td>
+</tr>
+<tr><td>regionCode</td>
+<td>String</td>
+<td>код региона; строка 3 символа</td>
+</tr>
+<tr><td>bankName</td>
+<td>String</td>
+<td>название банка; строка 100 символов</td>
+</tr>
+<tr><td>bankMfo</td>
+<td>String</td>
+<td>МФО банка, код-реквизит банка</td>
+</tr>
+<tr><td>phone</td>
+<td>String</td>
+<td>№ телефона; строка 50 символов</td>
+</tr>
+<tr><td>bankAccount</td>
+<td>String</td>
+<td>расчетный счет банка; строка 50 символов</td>
+</tr>
+<tr><td>otherInfo</td>
+<td>String</td>
+<td>комментарии</td>
+</tr>
+<tr><td>email</td>
+<td>String</td>
+<td>E-mail; строка 255 символов</td>
+</tr>
+<tr><td>metroCode</td>
+<td>String</td>
+<td>код точки доставки; строка 20 символов</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 2 - Описание параметров объекта <strong>Account</strong>)</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="2%" />
@@ -394,126 +534,6 @@ ul.auto-toc {
 </tr>
 </thead>
 <tbody valign="top">
-<tr><th class="stub"></th>
-<td id="identificator">Объект <strong>Identificator</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr><th class="stub">guid</th>
-<td>String</td>
-<td>GUID организации</td>
-</tr>
-<tr><th class="stub">taxNum</th>
-<td>String</td>
-<td>Налоговый идентификационный номер; строка 50 символов</td>
-</tr>
-<tr><th class="stub">ndsNum</th>
-<td>String</td>
-<td>№ свидетельства НДС; строка 50 символов</td>
-</tr>
-<tr><th class="stub">manager</th>
-<td>String</td>
-<td>ФИО менеджера; строка 100 символов</td>
-</tr>
-<tr><th class="stub">accountant</th>
-<td>String</td>
-<td>ФИО бухгалтера; строка 100 символов</td>
-</tr>
-<tr><th class="stub">id</th>
-<td>long</td>
-<td>ID пользователя</td>
-</tr>
-<tr><th class="stub">gln</th>
-<td>String</td>
-<td>GLN организации, которая связана с авторизированным пользователем? ; строка 13 символов</td>
-</tr>
-<tr><th class="stub">companyId</th>
-<td>long</td>
-<td>id аккаунта; число</td>
-</tr>
-<tr><th class="stub">retailerId</th>
-<td>long</td>
-<td>id сети (ритейлера); число</td>
-</tr>
-<tr><th class="stub">name</th>
-<td>String</td>
-<td>название организации; строка 100 символов</td>
-</tr>
-<tr><th class="stub">companyType</th>
-<td>String</td>
-<td>форма собственности; строка 5 символов; jur - Юридическое лицо, fiz - Физическое лицо</td>
-</tr>
-<tr><th class="stub">companyInn</th>
-<td>String</td>
-<td>код ИНН компании; строка 50 символов</td>
-</tr>
-<tr><th class="stub">companyKpp</th>
-<td>String</td>
-<td>код ЕГРПОУ/КПП; строка 50 символов</td>
-</tr>
-<tr><th class="stub">companyOgrn</th>
-<td>String</td>
-<td>Основной Государственный Регистрационный Номер; строка 15 символов</td>
-</tr>
-<tr><th class="stub">companyTaxDepartmentID</th>
-<td>String</td>
-<td>идентификатор отделения налоговой инспекции</td>
-</tr>
-<tr><th class="stub">dirLastName</th>
-<td>String</td>
-<td>фамилия директора; строка 150 символов</td>
-</tr>
-<tr><th class="stub">dirFirstName</th>
-<td>String</td>
-<td>имя директора; строка 150 символов</td>
-</tr>
-<tr><th class="stub">apartment</th>
-<td>String</td>
-<td>квартира; строка 20 символов</td>
-</tr>
-<tr><th class="stub">zip</th>
-<td>String</td>
-<td>почтовый индекс; строка 20 символов</td>
-</tr>
-<tr><th class="stub">city</th>
-<td>String</td>
-<td>город; строка 50 символов</td>
-</tr>
-<tr><th class="stub">street</th>
-<td>String</td>
-<td>название улицы; строка 100 символов</td>
-</tr>
-<tr><th class="stub">regionCode</th>
-<td>String</td>
-<td>код региона; строка 3 символа</td>
-</tr>
-<tr><th class="stub">bankName</th>
-<td>String</td>
-<td>название банка; строка 100 символов</td>
-</tr>
-<tr><th class="stub">bankMfo</th>
-<td>String</td>
-<td>МФО банка, код-реквизит банка</td>
-</tr>
-<tr><th class="stub">phone</th>
-<td>String</td>
-<td>№ телефона; строка 50 символов</td>
-</tr>
-<tr><th class="stub">bankAccount</th>
-<td>String</td>
-<td>расчетный счет банка; строка 50 символов</td>
-</tr>
-<tr><th class="stub">otherInfo</th>
-<td>String</td>
-<td>комментарии</td>
-</tr>
-<tr><th class="stub">email</th>
-<td>String</td>
-<td>E-mail; строка 255 символов</td>
-</tr>
-<tr><th class="stub">metroCode</th>
-<td>String</td>
-<td>код точки доставки; строка 20 символов</td>
-</tr>
 <tr><th class="stub"></th>
 <td id="account">Объект <strong>Account</strong></td>
 <td>&nbsp;</td>
@@ -582,116 +602,143 @@ ul.auto-toc {
 <td>List&lt;<a class="reference internal" href="#user">User</a>&gt;</td>
 <td>массив объектов;</td>
 </tr>
-<tr><th class="stub"></th>
-<td id="company">Объект <strong>Company</strong></td>
-<td>&nbsp;</td>
+</tbody>
+</table>
+<p>Таблица 3 - Описание параметров объекта <strong>Company</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head"></th>
+<th class="head" id="company">Объект <strong>Company</strong></th>
+<th class="head">&nbsp;</th>
 </tr>
-<tr><th class="stub">id</th>
+</thead>
+<tbody valign="top">
+<tr><td>id</td>
 <td>long</td>
 <td>id компании; число</td>
 </tr>
-<tr><th class="stub"><strong>account</strong></th>
+<tr><td><strong>account</strong></td>
 <td><a class="reference internal" href="#account">Account</a></td>
 <td>объект; данные аккаунта</td>
 </tr>
-<tr><th class="stub">name</th>
+<tr><td>name</td>
 <td>String</td>
 <td>полное наименование организации или ФИО индивидуального предпринимателя</td>
 </tr>
-<tr><th class="stub">ownership</th>
+<tr><td>ownership</td>
 <td>String</td>
 <td>форма собственности; строка 5 символов; jur - Юридическое лицо, fiz - Физическое лицо</td>
 </tr>
-<tr><th class="stub">edrpou</th>
+<tr><td>edrpou</td>
 <td>String</td>
 <td>код ЕГРПОУ/КПП; строка 50 символов</td>
 </tr>
-<tr><th class="stub">inn</th>
+<tr><td>inn</td>
 <td>String</td>
 <td>код ИНН; строка 50 символов</td>
 </tr>
-<tr><th class="stub">mail</th>
+<tr><td>mail</td>
 <td>String</td>
 <td>почта</td>
 </tr>
-<tr><th class="stub">phone</th>
+<tr><td>phone</td>
 <td>String</td>
 <td>№ телефона; строка 50 символов</td>
 </tr>
-<tr><th class="stub">ndsNumber</th>
+<tr><td>ndsNumber</td>
 <td>String</td>
 <td>№ свидетельства НДС; строка 50 символов</td>
 </tr>
-<tr><th class="stub">bankAccount</th>
+<tr><td>bankAccount</td>
 <td>String</td>
 <td>расчетный счет банка; строка 50 символов</td>
 </tr>
-<tr><th class="stub">bankName</th>
+<tr><td>bankName</td>
 <td>String</td>
 <td>название банка; строка 100 символов</td>
 </tr>
-<tr><th class="stub">bankMfo</th>
+<tr><td>bankMfo</td>
 <td>String</td>
 <td>МФО банка, код-реквизит банка</td>
 </tr>
-<tr><th class="stub">bankAddress</th>
+<tr><td>bankAddress</td>
 <td>String</td>
 <td>адрес банка; строка 150 символов</td>
 </tr>
-<tr><th class="stub"><strong>users</strong></th>
+<tr><td><strong>users</strong></td>
 <td>List&lt;<a class="reference internal" href="#user">User</a>&gt;</td>
 <td>массив объектов;</td>
 </tr>
-<tr><th class="stub"></th>
+</tbody>
+</table>
+<p>Таблица 4 - Описание параметров объекта <strong>User</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
 <td id="user">Объект <strong>User</strong></td>
 <td>&nbsp;</td>
 </tr>
-<tr><th class="stub">id</th>
+<tr><td>id</td>
 <td>long</td>
 <td>id пользователя; число</td>
 </tr>
-<tr><th class="stub">accountId</th>
+<tr><td>accountId</td>
 <td>long</td>
 <td>id аккаунта</td>
 </tr>
-<tr><th class="stub">login</th>
+<tr><td>login</td>
 <td>String</td>
 <td>логин пользователя; строка 50 символов</td>
 </tr>
-<tr><th class="stub">stringEmails</th>
+<tr><td>stringEmails</td>
 <td>String</td>
 <td>E-mail; строка 255 символов</td>
 </tr>
-<tr><th class="stub">emails</th>
+<tr><td>emails</td>
 <td>List&lt;String&gt;</td>
 <td>массив адресов E-mail</td>
 </tr>
-<tr><th class="stub">blocked</th>
+<tr><td>blocked</td>
 <td>int</td>
 <td>отметка о блокировке; число; 0 - нет, 1 - да</td>
 </tr>
-<tr><th class="stub">allowFTP</th>
+<tr><td>allowFTP</td>
 <td>int</td>
 <td>отметка доступа к FTP; число; 0 - нет, 1 - да</td>
 </tr>
-<tr><th class="stub">autoSending</th>
+<tr><td>autoSending</td>
 <td>boolean</td>
 <td>автоотправка; число; 0 - Нет, 1 - Да (документы автоматически отправляются при переносе документа для отправки в папку outbox)</td>
 </tr>
-<tr><th class="stub">statusFile</th>
+<tr><td>statusFile</td>
 <td>int</td>
 <td>создание статус-файлов; число; 0 - Нет, 1 - Да, 2 - Да, о доставке, 3 - Да, о прочтении</td>
 </tr>
-<tr><th class="stub">isAdmin</th>
+<tr><td>isAdmin</td>
 <td>boolean</td>
 <td>отметка, является ли пользователь админом в управление пользователями; число; 0 - нет, 1 - да</td>
 </tr>
 </tbody>
 </table>
-</div>
 <hr class="docutils" />
-<div class="section" id="id1">
-<h1>Примеры</h1>
+<p><strong>Примеры</strong></p>
+<hr class="docutils" />
 <p><strong>Запрос не содержит тела (json)</strong></p>
 <hr class="docutils" />
 <p><strong>Пример тела ответа (json):</strong></p>
@@ -734,7 +781,6 @@ ul.auto-toc {
 <span class="punctuation">}</span>
 <span class="operator">]</span>
 </pre>
-</div>
 </div>
 </body>
 </html>

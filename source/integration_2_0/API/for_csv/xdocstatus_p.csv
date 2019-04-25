@@ -7,8 +7,3 @@ id статуса, статус
 5, READ - прочитан(получатель)
 6, ERROR - ошибка
 7, DELETED - удален
-8, UID_SEND
-9, ARGMREFUSE
-10, SIGNREFUSE
-50, TEMPLATE
-51, CONFIRMED

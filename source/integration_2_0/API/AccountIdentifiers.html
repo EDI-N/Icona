@@ -372,9 +372,13 @@ ul.auto-toc {
 </div>
 <p>Спецификация для расшифровки ключей curl запроса: <a class="reference external" href="https://curl.haxx.se/docs/manpage.html">https://curl.haxx.se/docs/manpage.html</a></p>
 <hr class="docutils" />
-<div class="section" id="json-http">
-<h1>JSON-параметры в теле HTTP <strong>запроса/ответа</strong></h1>
+<p><strong>JSON-параметры в теле HTTP запроса/ответа</strong></p>
+<hr class="docutils" />
+<p><strong>REQUEST</strong></p>
+<hr class="docutils" />
 <p>В этом методе json-тело <strong>запроса</strong> отсутствует (другие данные передавать не нужно).</p>
+<hr class="docutils" />
+<p><strong>RESPONSE</strong></p>
 <hr class="docutils" />
 <p>Таблица 4 - Описание json-параметров, которые могут передаваться в <strong>ответ</strong> на метод API</p>
 <table border="1" class="docutils">
@@ -510,184 +514,11 @@ ul.auto-toc {
 <td>String</td>
 <td>код точки доставки; строка 20 символов</td>
 </tr>
-<tr><th class="stub"></th>
-<td id="account">Объект <strong>Account</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr><th class="stub">platform</th>
-<td>enum</td>
-<td>признак принадлежности к платформе EVO / FELEX</td>
-</tr>
-<tr><th class="stub">id</th>
-<td>int</td>
-<td>id аккаунта; число 11 символов</td>
-</tr>
-<tr><th class="stub">name</th>
-<td>String</td>
-<td>полное наименование организации или ФИО индивидуального предпринимателя</td>
-</tr>
-<tr><th class="stub">ownership</th>
-<td>String</td>
-<td>форма собственности; строка 5 символов; jur - Юридическое лицо, fiz - Физическое лицо</td>
-</tr>
-<tr><th class="stub">inn</th>
-<td>String</td>
-<td>код ИНН; строка 50 символов</td>
-</tr>
-<tr><th class="stub">kpp</th>
-<td>String</td>
-<td>код ЕГРПОУ/КПП; строка 50 символов</td>
-</tr>
-<tr><th class="stub">mail</th>
-<td>String</td>
-<td>почта</td>
-</tr>
-<tr><th class="stub">phone</th>
-<td>String</td>
-<td>№ телефона; строка 50 символов</td>
-</tr>
-<tr><th class="stub">ndsNumber</th>
-<td>String</td>
-<td>№ свидетельства НДС; строка 50 символов</td>
-</tr>
-<tr><th class="stub">bankAccount</th>
-<td>String</td>
-<td>расчетный счет банка; строка 50 символов</td>
-</tr>
-<tr><th class="stub">bankName</th>
-<td>String</td>
-<td>название банка; строка 100 символов</td>
-</tr>
-<tr><th class="stub">bankMfo</th>
-<td>String</td>
-<td>МФО банка, код-реквизит банка</td>
-</tr>
-<tr><th class="stub">bankAddress</th>
-<td>String</td>
-<td>адрес банка; строка 150 символов</td>
-</tr>
-<tr><th class="stub"><strong>identificators</strong></th>
-<td>List&lt;<a class="reference internal" href="#identificator">Identificator</a>&gt;</td>
-<td>массив объектов;</td>
-</tr>
-<tr><th class="stub"><strong>companies</strong></th>
-<td>List&lt;<a class="reference internal" href="#company">Company</a>&gt;</td>
-<td>массив объектов;</td>
-</tr>
-<tr><th class="stub"><strong>users</strong></th>
-<td>List&lt;<a class="reference internal" href="#user">User</a>&gt;</td>
-<td>массив объектов;</td>
-</tr>
-<tr><th class="stub"></th>
-<td id="company">Объект <strong>Company</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr><th class="stub">id</th>
-<td>long</td>
-<td>id компании; число</td>
-</tr>
-<tr><th class="stub"><strong>account</strong></th>
-<td><a class="reference internal" href="#account">Account</a></td>
-<td>объект; данные аккаунта</td>
-</tr>
-<tr><th class="stub">name</th>
-<td>String</td>
-<td>полное наименование организации или ФИО индивидуального предпринимателя</td>
-</tr>
-<tr><th class="stub">ownership</th>
-<td>String</td>
-<td>форма собственности; строка 5 символов; jur - Юридическое лицо, fiz - Физическое лицо</td>
-</tr>
-<tr><th class="stub">edrpou</th>
-<td>String</td>
-<td>код ЕГРПОУ/КПП; строка 50 символов</td>
-</tr>
-<tr><th class="stub">inn</th>
-<td>String</td>
-<td>код ИНН; строка 50 символов</td>
-</tr>
-<tr><th class="stub">mail</th>
-<td>String</td>
-<td>почта</td>
-</tr>
-<tr><th class="stub">phone</th>
-<td>String</td>
-<td>№ телефона; строка 50 символов</td>
-</tr>
-<tr><th class="stub">ndsNumber</th>
-<td>String</td>
-<td>№ свидетельства НДС; строка 50 символов</td>
-</tr>
-<tr><th class="stub">bankAccount</th>
-<td>String</td>
-<td>расчетный счет банка; строка 50 символов</td>
-</tr>
-<tr><th class="stub">bankName</th>
-<td>String</td>
-<td>название банка; строка 100 символов</td>
-</tr>
-<tr><th class="stub">bankMfo</th>
-<td>String</td>
-<td>МФО банка, код-реквизит банка</td>
-</tr>
-<tr><th class="stub">bankAddress</th>
-<td>String</td>
-<td>адрес банка; строка 150 символов</td>
-</tr>
-<tr><th class="stub"><strong>users</strong></th>
-<td>List&lt;<a class="reference internal" href="#user">User</a>&gt;</td>
-<td>массив объектов;</td>
-</tr>
-<tr><th class="stub"></th>
-<td id="user">Объект <strong>User</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr><th class="stub">id</th>
-<td>long</td>
-<td>id пользователя; число</td>
-</tr>
-<tr><th class="stub">accountId</th>
-<td>long</td>
-<td>id аккаунта</td>
-</tr>
-<tr><th class="stub">login</th>
-<td>String</td>
-<td>логин пользователя; строка 50 символов</td>
-</tr>
-<tr><th class="stub">stringEmails</th>
-<td>String</td>
-<td>E-mail; строка 255 символов</td>
-</tr>
-<tr><th class="stub">emails</th>
-<td>List&lt;String&gt;</td>
-<td>массив адресов E-mail</td>
-</tr>
-<tr><th class="stub">blocked</th>
-<td>int</td>
-<td>отметка о блокировке; число; 0 - нет, 1 - да</td>
-</tr>
-<tr><th class="stub">allowFTP</th>
-<td>int</td>
-<td>отметка доступа к FTP; число; 0 - нет, 1 - да</td>
-</tr>
-<tr><th class="stub">autoSending</th>
-<td>boolean</td>
-<td>автоотправка; число; 0 - Нет, 1 - Да (документы автоматически отправляются при переносе документа для отправки в папку outbox)</td>
-</tr>
-<tr><th class="stub">statusFile</th>
-<td>int</td>
-<td>создание статус-файлов; число; 0 - Нет, 1 - Да, 2 - Да, о доставке, 3 - Да, о прочтении</td>
-</tr>
-<tr><th class="stub">isAdmin</th>
-<td>boolean</td>
-<td>отметка, является ли пользователь админом в управление пользователями; число; 0 - нет, 1 - да</td>
-</tr>
 </tbody>
 </table>
-</div>
 <hr class="docutils" />
-<div class="section" id="id1">
-<h1>Примеры</h1>
+<p><strong>Примеры</strong></p>
+<hr class="docutils" />
 <p><strong>Запрос не содержит тела (json)</strong></p>
 <hr class="docutils" />
 <p><strong>Пример тела ответа (json):</strong></p>
@@ -730,7 +561,6 @@ ul.auto-toc {
 <span class="punctuation">}</span>
 <span class="operator">]</span>
 </pre>
-</div>
 </div>
 </body>
 </html>

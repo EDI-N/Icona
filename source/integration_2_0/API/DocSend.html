@@ -381,454 +381,404 @@ ul.auto-toc {
 </div>
 <p>Спецификация для расшифровки ключей curl запроса: <a class="reference external" href="https://curl.haxx.se/docs/manpage.html">https://curl.haxx.se/docs/manpage.html</a></p>
 <hr class="docutils" />
-<div class="section" id="json-http">
-<h1>JSON-параметры в теле HTTP <strong>запроса/ответа</strong></h1>
+<p><strong>JSON-параметры в теле HTTP запроса/ответа</strong></p>
+<hr class="docutils" />
+<p><strong>REQUEST</strong></p>
+<hr class="docutils" />
 <p>Таблица 1 - Описание json-параметров (фильтр) <strong>запроса</strong> метода API</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="17%" />
+<col width="16%" />
 <col width="4%" />
 <col width="20%" />
-<col width="59%" />
+<col width="60%" />
 </colgroup>
 <thead valign="bottom">
 <tr><th class="head">Наименование</th>
 <th class="head"><a class="reference internal" href="#id2">Тип</a></th>
 <th class="head">Формат</th>
-<th class="head">Описание (field_description, как аналогия с dbpro)</th>
+<th class="head">Описание</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr><td><strong>extra_fields</strong></td>
 <td>&nbsp;</td>
 <td><strong>Map&lt;String, String&gt;</strong></td>
-<td>массив объектов; набор индексов (аналог индексных таблиц)</td>
+<td>массив объектов; набор индексов</td>
 </tr>
 <tr><td><strong>multi_extra_fields</strong></td>
 <td>&nbsp;</td>
 <td><strong>Map&lt;String, List&lt;String&gt;&gt;</strong></td>
 <td>массив объектов; мультииндекс. Может быть использован для индексирования элементов строки</td>
 </tr>
-<tr><td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>Объект <strong>extra_fields</strong></td>
-<td>&nbsp;</td>
+</tbody>
+</table>
+<p>Таблица 2 - Описание <strong>extra_fields</strong> параметров</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="3%" />
+<col width="11%" />
+<col width="19%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">id параметра</th>
+<th class="head">Наименование параметра</th>
+<th class="head">Тип</th>
+<th class="head">Формат</th>
+<th class="head">Описание параметра</th>
 </tr>
-<tr><td>created_from</td>
+</thead>
+<tbody valign="top">
+<tr><td>1</td>
+<td>created_from</td>
 <td>&nbsp;</td>
 <td>UUID</td>
-<td>NULL</td>
+<td>идентификатор документа или цепочки</td>
 </tr>
-<tr><td>is_signed</td>
+<tr><td>2</td>
+<td>is_signed</td>
 <td>&nbsp;</td>
 <td>TINYINT</td>
-<td>NULL - отметка о подписании</td>
+<td>отметка о подписании</td>
 </tr>
-<tr><td>encrypted</td>
+<tr><td>3</td>
+<td>encrypted</td>
 <td>&nbsp;</td>
 <td>TINYINT</td>
-<td>NULL - отметка о шифровании</td>
+<td>отметка о шифровании</td>
 </tr>
-<tr><td>comdoc_reestr_id</td>
+<tr><td>4</td>
+<td>comdoc_reestr_id</td>
 <td>&nbsp;</td>
 <td>INT</td>
-<td>index_comdoc2reestr - id факторингового Реестра на основании коммерческого документа</td>
+<td>id факторингового Реестра на основании коммерческого документа</td>
 </tr>
-<tr><td>comdoc_reestr_is_active</td>
+<tr><td>5</td>
+<td>comdoc_reestr_is_active</td>
 <td>&nbsp;</td>
 <td>TINYINT</td>
-<td>index_comdoc2reestr - отметка об активности факторингового договора</td>
+<td>отметка об активности факторингового договора</td>
 </tr>
-<tr><td>ftpex_file_name</td>
+<tr><td>6</td>
+<td>ftpex_file_name</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_ftpexdoc - наименование файла, отправленного по FTP</td>
+<td><blockquote class="first last">
+наименование файла,  отправленного по FTP</blockquote>
+</td>
 </tr>
-<tr><td>ftpex_file_date</td>
+<tr><td>7</td>
+<td>ftpex_file_date</td>
 <td>&nbsp;</td>
 <td>INT</td>
-<td>index_ftpexdoc - дата/время отправки документа по FTP</td>
+<td>дата/время отправки документа по FTP</td>
 </tr>
-<tr><td>inv_date</td>
+<tr><td>8</td>
+<td>inv_date</td>
 <td>&nbsp;</td>
 <td>INT</td>
-<td>index_varinvdate - дата документа invrpt (Отчет об инвентаризации)</td>
+<td>дата документа invrpt (Отчет об инвентаризации)</td>
 </tr>
-<tr><td>inv_num</td>
+<tr><td>9</td>
+<td>inv_num</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varinvnum - номер документа invrpt (Отчет об инвентаризации)</td>
+<td>номер документа invrpt (Отчет об инвентаризации)</td>
 </tr>
-<tr><td>error_code</td>
+<tr><td>11</td>
+<td>sub_doc_type_id</td>
 <td>&nbsp;</td>
 <td>INT</td>
-<td>index_interrorcode - код ошибки по документообороту</td>
+<td>id подтипа документа</td>
 </tr>
-<tr><td>sub_doc_type_id</td>
+<tr><td>12</td>
+<td>sub_status_id</td>
 <td>&nbsp;</td>
 <td>INT</td>
-<td>index_intsubdoctypeid - id подтипа документа</td>
+<td>id статуса документа (состояние цепочки документов)</td>
 </tr>
-<tr><td>sub_status_id</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_intsubstatusid - id статуса документа (состояние цепочки документов)</td>
-</tr>
-<tr><td>action</td>
+<tr><td>13</td>
+<td>action</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varaction - статус документа по осуществленным действиям пользователя</td>
+<td>статус документа по осуществленным действиям пользователя</td>
 </tr>
-<tr><td>buyer_uuid</td>
+<tr><td>14</td>
+<td>buyer_uuid</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varbuyer - отправитель документа</td>
+<td>отправитель документа</td>
 </tr>
-<tr><td>consignee_uuid</td>
+<tr><td>15</td>
+<td>consignee_uuid</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varconsignee - грузопполучатель</td>
+<td>грузопполучатель</td>
 </tr>
-<tr><td>consignor_uuid</td>
+<tr><td>16</td>
+<td>consignor_uuid</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varconsignor - грузоотправитель</td>
+<td>грузоотправитель</td>
 </tr>
-<tr><td>customer_uuid</td>
+<tr><td>17</td>
+<td>customer_uuid</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varcustomer - покупатель</td>
+<td>покупатель</td>
 </tr>
-<tr><td>performer_uuid</td>
+<tr><td>18</td>
+<td>performer_uuid</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varperformer - исполнитель</td>
+<td>исполнитель</td>
 </tr>
-<tr><td>supplier_uuid</td>
+<tr><td>19</td>
+<td>supplier_uuid</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varsupplier - поставщик</td>
+<td>поставщик</td>
 </tr>
-<tr><td>delivery_place_uuid</td>
+<tr><td>20</td>
+<td>delivery_place_uuid</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_vardeliveryplace - место доставки</td>
+<td>место доставки</td>
 </tr>
-<tr><td>contract_date</td>
+<tr><td>21</td>
+<td>contract_date</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varcontractdate - дата договора</td>
+<td>дата договора</td>
 </tr>
-<tr><td>contract_number</td>
+<tr><td>22</td>
+<td>contract_number</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varcontractnum - номер договора</td>
+<td>номер договора</td>
 </tr>
-<tr><td>delivery_date</td>
+<tr><td>23</td>
+<td>delivery_date</td>
 <td>M</td>
 <td>INT</td>
-<td>index_vardeliverydate - дата доставки</td>
+<td>дата доставки</td>
 </tr>
-<tr><td>order_number</td>
+<tr><td>24</td>
+<td>order_number</td>
 <td>M</td>
 <td>VARCHAR</td>
-<td>index_varordnum - номер заказа</td>
+<td>номер заказа</td>
 </tr>
-<tr><td>order_date</td>
+<tr><td>25</td>
+<td>order_date</td>
 <td>&nbsp;</td>
 <td>INT</td>
-<td>index_varorderdate - дата заказа</td>
+<td>дата заказа</td>
 </tr>
-<tr><td>return_date</td>
+<tr><td>26</td>
+<td>return_date</td>
 <td>&nbsp;</td>
 <td>INT</td>
-<td>index_varreturndate - дата возврата</td>
+<td>дата возврата</td>
 </tr>
-<tr><td>summ</td>
+<tr><td>27</td>
+<td>summ</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_vardocsumm - сумма с НДС</td>
+<td>сумма с НДС</td>
 </tr>
-<tr><td>parent_chain_hash</td>
+<tr><td>28</td>
+<td>parent_chain_hash</td>
 <td>&nbsp;</td>
 <td>MD5</td>
-<td>index_varparentchainhash - хэш цепочки</td>
+<td>хэш цепочки</td>
 </tr>
-<tr><td>period</td>
+<tr><td>29</td>
+<td>period</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varperiod - крайняя дата подписи документа</td>
+<td>крайняя дата подписи документа</td>
 </tr>
-<tr><td>text_uvutoch</td>
+<tr><td>31</td>
+<td>trans_id</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>id транзакции</td>
+</tr>
+<tr><td>32</td>
+<td>ttn</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>номер накладной</td>
+</tr>
+<tr><td>33</td>
+<td>doc_start_date</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>начало срока подписания документа</td>
+</tr>
+<tr><td>34</td>
+<td>doc_end_date</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>окончание срока подписания документа</td>
+</tr>
+<tr><td>35</td>
+<td>delivery_note_number</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>номер накладной</td>
+</tr>
+<tr><td>42</td>
+<td>contract_gln</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>GLN место доставки при товарном согласовании (Agreem-&gt;Comdoc)</td>
+</tr>
+<tr><td>43</td>
+<td>doc_date</td>
+<td>&nbsp;</td>
+<td>INT</td>
+<td>дата из документа</td>
+</tr>
+<tr><td>44</td>
+<td>delivery_agreement_number</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>количество согласований</td>
+</tr>
+<tr><td>45</td>
+<td>delivery_agreement_date</td>
+<td>&nbsp;</td>
+<td>INT</td>
+<td>дата согласования</td>
+</tr>
+<tr><td>46</td>
+<td>varn</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>юзд id документа</td>
+</tr>
+<tr><td>47</td>
+<td>other_info</td>
 <td>&nbsp;</td>
 <td>TEXT</td>
-<td>index_vartextuvutoch - содержимое текста Уведомлений об уточнении ( DP_UVUTOCH )</td>
+<td>дополнительные данные</td>
 </tr>
-<tr><td>trans_id</td>
+<tr><td>48</td>
+<td>sub_doc_date</td>
+<td>&nbsp;</td>
+<td>INT</td>
+<td>дата подтипа документа</td>
+</tr>
+<tr><td>49</td>
+<td>sub_doc_number</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_vartransid - id транзакции</td>
+<td>номер подтипа документа</td>
 </tr>
-<tr><td>ttn</td>
+<tr><td>50</td>
+<td>doc_error</td>
+<td>&nbsp;</td>
+<td>TEXT</td>
+<td>шибка при работе с документом</td>
+</tr>
+<tr><td>51</td>
+<td>doc_info</td>
+<td>&nbsp;</td>
+<td>TEXT</td>
+<td>комментарий к документу</td>
+</tr>
+<tr><td>52</td>
+<td>old_doc_id</td>
+<td>&nbsp;</td>
+<td>INT</td>
+<td>id документа</td>
+</tr>
+<tr><td>53</td>
+<td>sub_status_date</td>
+<td>&nbsp;</td>
+<td>INT</td>
+<td>дата статуса документа (состояние цепочки документов)</td>
+</tr>
+<tr><td>54</td>
+<td>from_doc_id</td>
+<td>&nbsp;</td>
+<td>INT</td>
+<td>порядковый номер документа в цепочке</td>
+</tr>
+<tr><td>56</td>
+<td>doc_num</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_varttn - номер накладной</td>
+<td>номер документа</td>
 </tr>
-<tr><td>doc_start_date</td>
+<tr><td>57</td>
+<td>sender</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_docdurdate - начало срока подписания документа</td>
+<td>GLN отправителя</td>
 </tr>
-<tr><td>doc_end_date</td>
+<tr><td>58</td>
+<td>recipient</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_docdurdate - окончание срока подписания документа</td>
+<td>GLN получателя</td>
 </tr>
-<tr><td>delivery_note_number</td>
+<tr><td>59</td>
+<td>file_name</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_intdeliverynotenumber - номер накладной</td>
+<td>наименование прикладываемого (вложение) файла</td>
 </tr>
-<tr><td>rep_destination</td>
+<tr><td>60</td>
+<td>xml_hash</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>хеш содержания документа</td>
+</tr>
+<tr><td>61</td>
+<td>answer_doc_id</td>
+<td>&nbsp;</td>
+<td>INT</td>
+<td>id ответного COMDOC документа</td>
+</tr>
+<tr><td>80</td>
+<td>identifier</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>идентификатор документа в системе клиента</td>
+</tr>
+<tr><td>82</td>
+<td>compound_number</td>
+<td>&nbsp;</td>
+<td>VARCHAR</td>
+<td>составной номер</td>
+</tr>
+<tr><td>85</td>
+<td>doc_process</td>
 <td>&nbsp;</td>
 <td>TINYINT</td>
-<td>index_repdestnation - индекс каталога получателя</td>
-</tr>
-<tr><td>tax_doc_guid</td>
 <td>&nbsp;</td>
-<td>UUID</td>
-<td>index_taxdocguid - отчетность (не используются)</td>
 </tr>
-<tr><td>tax_exch_guid</td>
-<td>&nbsp;</td>
-<td>UUID</td>
-<td>index_taxexchguid - отчетность (не используются)</td>
-</tr>
-<tr><td>tax_recipient</td>
+<tr><td>87</td>
+<td>users</td>
 <td>&nbsp;</td>
 <td>VARCHAR</td>
-<td>index_taxrecipient - отчетность (не используются)</td>
-</tr>
-<tr><td>tax_sender</td>
 <td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_taxsender - отчетность (не используются)</td>
-</tr>
-<tr><td>tax_state_id</td>
-<td>&nbsp;</td>
-<td>TINYINT</td>
-<td>index_taxstateid - отчетность (не используются)</td>
-</tr>
-<tr><td>contract_gln</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_varcontractgln - GLN место доставки при товарном согласовании (Agreem-&gt;Comdoc)</td>
-</tr>
-<tr><td>doc_date</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_vardate - дата из документа</td>
-</tr>
-<tr><td>delivery_agreement_number</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_vardeliveryagreementdata - количество согласований</td>
-</tr>
-<tr><td>delivery_agreement_date</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_vardeliveryagreementdata - дата согласования</td>
-</tr>
-<tr><td>varn</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_varn - юзд id документа</td>
-</tr>
-<tr><td>other_info</td>
-<td>&nbsp;</td>
-<td>TEXT</td>
-<td>index_varotherinfo - дополнительные данные</td>
-</tr>
-<tr><td>sub_doc_date</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_varsubdocdate - дата подтипа документа</td>
-</tr>
-<tr><td>sub_doc_number</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_varsubdocnumber - номер подтипа документа</td>
-</tr>
-<tr><td>doc_error</td>
-<td>&nbsp;</td>
-<td>TEXT</td>
-<td>doc_error - ошибка при работе с документом</td>
-</tr>
-<tr><td>doc_info</td>
-<td>&nbsp;</td>
-<td>TEXT</td>
-<td>doc_info - комментарий к документу</td>
-</tr>
-<tr><td>old_doc_id</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>intDocID - id документа</td>
-</tr>
-<tr><td>sub_status_date</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_intsubstatusid - дата статуса документа (состояние цепочки документов)</td>
-</tr>
-<tr><td>from_doc_id</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>intFromDocID - порядковый номер документа в цепочке</td>
-</tr>
-<tr><td>doc_num</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_vardocnum - номер документа</td>
-</tr>
-<tr><td>sender</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_varsender - GLN отправителя</td>
-</tr>
-<tr><td>recipient</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_varrecipient - GLN получателя</td>
-</tr>
-<tr><td>file_name</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>condra_body, agreem_body - наименование прикладываемого (вложение) файла</td>
-</tr>
-<tr><td>xml_hash</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>comdocs_dsigns - хеш содержания документа</td>
-</tr>
-<tr><td>answer_doc_id</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>comdoc_answer_doc - id ответного COMDOC документа</td>
-</tr>
-<tr><td>manager_name</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>tander_logistic - менеджер, создатель документа</td>
-</tr>
-<tr><td>consignors_list</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>tander_logistic - список грузоотправителей</td>
-</tr>
-<tr><td>consignees_list</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>tander_logistic - список грузополучателей</td>
-</tr>
-<tr><td>car_info</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>tander_logistic - гос. номер ТС</td>
-</tr>
-<tr><td>driver_info</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>tander_logistic - ФИО водителя</td>
-</tr>
-<tr><td>trip_date_from</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_iftmbfdopinfo.varDateFrom - дата подачи</td>
-</tr>
-<tr><td>trip_date_end</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_iftmbfdopinfo.varPlanEndTripDate - плановое завершение рейса, дата</td>
-</tr>
-<tr><td>trip_date_end_actual</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_iftmbfdopinfo.varActualPlanEndTrip
-Date - aктуальное плановое завершение рейса, дата</td>
-</tr>
-<tr><td>trip_time_from</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_iftmbfdopinfo.varTimeFrom - время подачи</td>
-</tr>
-<tr><td>trip_time_end</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_iftmbfdopinfo.varPlanEndTripTime - плановое завершение рейса, время</td>
-</tr>
-<tr><td>trip_time_end_actual</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_iftmbfdopinfo.varActualPlanEndTripTime - aктуальное плановое завершение рейса, время</td>
-</tr>
-<tr><td>trip_tonnage</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_iftmbfdopinfo.varTonnage - тоннаж ТС</td>
-</tr>
-<tr><td>trip_unload_type</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_iftmbfdopinfo.varUnloadType - высота борта ТС</td>
-</tr>
-<tr><td>trip_pallet_amount</td>
-<td>&nbsp;</td>
-<td>INT</td>
-<td>index_iftmbfdopinfo.varPalletAmount - паллетовместимость</td>
-</tr>
-<tr><td>trip_zone</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_iftmbfdopinfo.varZone - зона</td>
-</tr>
-<tr><td>trip_cargo_type</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_iftmbfdopinfo.varCargoType - тип отгружаемого товара</td>
-</tr>
-<tr><td>trip_version_info</td>
-<td>&nbsp;</td>
-<td>TEXT</td>
-<td>index_iftmbfdopinfo.varVersionInfo - комментарий по версии</td>
-</tr>
-<tr><td>trip_region</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_iftmbfdopinfo.varRegion - регион</td>
-</tr>
-<tr><td>identifier</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_varidentifier - идентификатор документа в системе клиента</td>
-</tr>
-<tr><td>relative_chain_hash</td>
-<td>&nbsp;</td>
-<td>MD5</td>
-<td>index_varrelativechainhash - хеш цепочки прайс-листа (PRICAT)</td>
-</tr>
-<tr><td>compound_number</td>
-<td>&nbsp;</td>
-<td>VARCHAR</td>
-<td>index_compoundnumber - составной номер</td>
 </tr>
 </tbody>
 </table>
 <p id="id2">Тип поля: <strong>M - mandatory</strong> (обязательное к заполнению), <strong>O - optional</strong> (опциональное)</p>
 <hr class="docutils" />
-<p>В этом методе json-тело <strong>ответа</strong> отсутствует.</p>
-</div>
+<p><strong>RESPONSE</strong></p>
 <hr class="docutils" />
-<div class="section" id="id3">
-<h1>Примеры</h1>
+<p>В этом методе json-тело <strong>ответа</strong> отсутствует.</p>
+<hr class="docutils" />
+<p><strong>Примеры</strong></p>
+<hr class="docutils" />
 <p><strong>Пример тела запроса (json):</strong></p>
 <pre class="code ruby literal-block">
 <span class="punctuation">{</span>
@@ -851,7 +801,6 @@ Date - aктуальное плановое завершение рейса, д�
 <p><strong>Пример тела ответа (json):</strong></p>
 <p>В этом методе json-тело <strong>ответа</strong> отсутствует.</p>
 <p>Возвращаемый текст – «OK»</p>
-</div>
 </div>
 </body>
 </html>
