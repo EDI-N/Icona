@@ -2,19 +2,7 @@ API
 ###########
 
 .. toctree::
-   :titlesonly:
+    :glob:
    
-   Authorization
-   DocsSearch
-   EdsDoc
-   OasUser
-   AccountIdentifiers
-   OasRetailers
-   RetailerIdentificators
-   Allretailers
-   OasUnits
-   OasIdentifiers
-   EdsChain
-   DocBody
-   DocSend
+   *
 
