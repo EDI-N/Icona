@@ -36,13 +36,37 @@ JSON-параметры в теле HTTP **запроса/ответа**
 
 **Ответ:** массив объектов данных о контрагентах
 
-Таблица 4 - Описание json-параметров, которые могут передаваться в **ответ** на метод API
+Таблица 1 - Описание json-параметров, которые могут передаваться в **ответ** на метод API
 
 .. csv-table:: 
   :file: for_csv/Identificator.csv
   :widths:  1, 19, 41
   :header-rows: 1
+  :stub-columns: 0
+
+Таблица 2 - Описание параметров объекта **Account**)
+
+.. csv-table:: 
+  :file: for_csv/Account.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
   :stub-columns: 1
+
+Таблица 3 - Описание параметров объекта **Company**)
+
+.. csv-table:: 
+  :file: for_csv/Company.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
+
+Таблица 4 - Описание параметров объекта **User**)
+
+.. csv-table:: 
+  :file: for_csv/User.csv
+  :widths:  1, 19, 41
+  :header-rows: 1
+  :stub-columns: 0
 
 --------------
 

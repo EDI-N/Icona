@@ -442,7 +442,7 @@ ul.auto-toc {
 <td>флаг наличия отметки &quot;важный&quot; документ</td>
 </tr>
 <tr><th class="stub"><strong>status</strong></th>
-<td><a href="#id5"><span class="problematic" id="id6">XChainStatus_</span></a></td>
+<td><a class="reference internal" href="#xchainstatus">XChainStatus</a></td>
 <td>объект; статус пары документов у отправителя и получателя</td>
 </tr>
 <tr><th class="stub">visualStatus</th>
@@ -468,18 +468,33 @@ ul.auto-toc {
 </tbody>
 </table>
 <p>Таблица 5 - Описание параметров объекта <strong>XChainStatus</strong>)</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">EdsChain.rst</tt>, line 64)</p>
-<p>1 header row(s) specified but only 0 row(s) of data supplied (&quot;csv-table&quot; directive).</p>
-<pre class="literal-block">
-.. csv-table::
-  :file: for_csv/XChainStatus.csv
-  :widths:  1, 19, 41
-  :header-rows: 1
-  :stub-columns: 1
-
-</pre>
-</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head stub">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><th class="stub"></th>
+<td id="xchainstatus">Объект <strong>XChainStatus</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><th class="stub">state</th>
+<td>int</td>
+<td>id статуса</td>
+</tr>
+<tr><th class="stub">title</th>
+<td>String</td>
+<td>статус</td>
+</tr>
+</tbody>
+</table>
 <p>Таблица 6 - Описание параметров объекта <strong>XDocStatus</strong>)</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -1286,12 +1301,6 @@ UZDRESPONSE = 6;</td>
 <span class="literal string double">&quot;hash&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;48800BFDDF4C38598D723A42F0384F03&quot;</span>
 <span class="punctuation">}</span>
 </pre>
-</div>
-<div class="system-messages section">
-<h1>Docutils System Messages</h1>
-<div class="system-message" id="id5">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">for_csv/XChain.csv</tt>, line 1); <em><a href="#id6">backlink</a></em></p>
-Unknown target name: &quot;xchainstatus&quot;.</div>
 </div>
 </div>
 </body>
