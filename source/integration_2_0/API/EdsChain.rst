@@ -201,6 +201,11 @@
 
 **Запрос не содержит тела (json)**
 
+**Примеры url-запросов:**
+
+- Получить перечень документов по определенной цепочке без загрузки их тел, пакетов, комментариев, тегов и статусов: ``https://edo-v2.edi-n.com/api/eds/chain?gln=9864232304302&chain_uuid=0fe60377-51db-4b7a-b7eb-cdf5fa91a46a&load_docs=true&load_bodies=false&load_package=false&load_comments=false&load_tags=false&load_statuses=false``
+
+
 --------------
 
 **Пример тела ответа (json):**

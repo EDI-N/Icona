@@ -229,56 +229,130 @@
 
 --------------
 
-**Примеры**
+**Примеры (json)**
 
 --------------
 
-**Пример тела запроса (json):**
+**Получить все входящие (полученные) документы на определенный GLN без черновиков (массив statuses не содержит "1"):**
 
 .. code:: ruby
 
-        { 
-            "direction": {
-                "receiver": [
-                    "9864065703464"
-                ],
-                "sender": [
-                    "9864065702429"
-                ],
-                "type": "IN"
-            },
-            "statuses": [
-                0
+    {
+        "direction": {
+            "sender": [],
+            "receiver": [
+                "9864232304302"
             ],
-            "type":[
-                {
-                    "type" : 0
-                }
+            "type": "IN"
+        },
+        "exchangeStatus": [],
+        "family": "1",
+        "statuses": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "type": [
+            {
+                "type": "0"
+            }
+        ]
+    }
+
+**Получить все исходящие (отправленные) документы по GLN без черновиков (массив statuses не содержит "1"):**
+
+.. code:: ruby
+
+    {
+        "direction": {
+            "sender": [
+                "9864232304302"
             ],
-            "limit":{
-                "offset":"0",
-                "count":"3"
-            },
-            "family":1,
-            "number":"com222",
-            "docDate":{
-                "startTimestamp":"0",
-                "finishTimestamp":"1505497243"
-            },
-            "docCreate":{
-                "startTimestamp":"1505307243",
-                "finishTimestamp":"1505497243"
-            },
-            "docRead":{
-                "startTimestamp":"0",
-                "finishTimestamp":"1505497243"
-            },
-            "docChanged":{
-                "startTimestamp":"1505307243",
-                "finishTimestamp":"1505497243"
-            },
-            "exchangeStatus":[]
+            "receiver": [],
+            "type": "IN"
+        },
+        "exchangeStatus": [],
+        "family": "1",
+        "statuses": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "type": [
+            {
+                "type": "0"
+            }
+        ]
+    }
+
+**Получить все входящие (полученные) документы на определенный GLN без черновиков (массив statuses не содержит "1"), у которых номер содержит подстроку "1001":**
+
+.. code:: ruby
+
+    {
+        "direction": {
+            "sender": [],
+            "receiver": [
+                "9864232304302"
+            ],
+            "type": "IN"
+        },
+        "exchangeStatus": [],
+        "family": "1",
+        "statuses": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "number": "1001",
+        "type": [
+            {
+                "type": "0"
+            }
+        ]
+    }
+
+**Получить все исходящие (отправленные) документы по GLN без черновиков (массив statuses не содержит "1"), которые созданы в мае 2019 (startTimestamp и finishTimestamp даты в формате UNIX-timestamp)**
+
+.. code:: ruby
+
+    {
+        "direction": {
+            "sender": [
+                "9864232304302"
+            ],
+            "receiver": [],
+            "type": "IN"
+        },
+        "exchangeStatus": [],
+        "family": "1",
+        "statuses": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "type": [
+            {
+                "type": "0"
+            }
+        ],
+        "docDate": {
+            "startTimestamp": "1556668800",
+            "finishTimestamp": "1559347199"
         }
+    }
 
 --------------
 
