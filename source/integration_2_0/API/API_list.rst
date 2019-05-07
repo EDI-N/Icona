@@ -5,13 +5,13 @@ API
     :maxdepth: 1
    
    Authorization
-   :name: Работа с документами
+   :caption: Работа с документами
    EdsDoc
    DocSend
    DocsSearch
    EdsChain
    DocBody
-   :name: Работа со справочниками
+   :caption: Работа со справочниками
    OasUser
    AccountIdentifiers
    OasRetailers
