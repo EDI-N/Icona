@@ -5,13 +5,22 @@ API
     :maxdepth: 1
    
    Authorization
-   :caption: Работа с документами
+
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Работа с документами
+
    EdsDoc
    DocSend
    DocsSearch
    EdsChain
    DocBody
-   :caption: Работа со справочниками
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Работа со справочниками
+   
    OasUser
    AccountIdentifiers
    OasRetailers
@@ -19,6 +28,5 @@ API
    Allretailers
    OasUnits
    OasIdentifiers
-
    
 
