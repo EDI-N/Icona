@@ -2,14 +2,14 @@ API
 ###########
 
 .. toctree::
-    :maxdepth: 1
+   :maxdepth: 1
    
    Authorization
 
 
 .. toctree::
-    :maxdepth: 1
-    :caption: Работа с документами
+   :maxdepth: 1
+   :caption: Работа с документами
 
    EdsDoc
    DocSend
@@ -18,8 +18,8 @@ API
    DocBody
 
 .. toctree::
-    :maxdepth: 1
-    :caption: Работа со справочниками
+   :maxdepth: 1
+   :caption: Работа со справочниками
    
    OasUser
    AccountIdentifiers
@@ -29,4 +29,6 @@ API
    OasUnits
    OasIdentifiers
    
-
+.. toctree::
+   :maxdepth: 2
+   :caption: EDIN_DOCflow
