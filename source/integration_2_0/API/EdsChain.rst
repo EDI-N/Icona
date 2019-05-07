@@ -206,6 +206,14 @@
 - Получить перечень документов по определенной цепочке без загрузки их тел, пакетов, комментариев, тегов и статусов:
   https://edo-v2.edi-n.com/api/eds/chain?gln=9864232304302&chain_uuid=0fe60377-51db-4b7a-b7eb-cdf5fa91a46a&load_docs=true&load_bodies=false&load_package=false&load_comments=false&load_tags=false&load_statuses=false
 
+- Получить перечень документов по определенной цепочке с загрузкой тел и комментариев без загрузки их пакетов, тегов и статусов:
+  https://edo-v2.edi-n.com/api/eds/chain?gln=9864232304302&chain_uuid=0fe60377-51db-4b7a-b7eb-cdf5fa91a46a&load_docs=true&load_bodies=true&load_package=false&load_comments=true&load_tags=false&load_statuses=false
+
+- Получить перечень документов по определенной цепочке с загрузкой пакетов, тегов без загрузки их тел и комментариев и статусов
+  https://edo-v2.edi-n.com/api/eds/chain?gln=9864232304302&chain_uuid=0fe60377-51db-4b7a-b7eb-cdf5fa91a46a&load_docs=true&load_bodies=false&load_package=true&load_comments=false&load_tags=true&load_statuses=false
+
+- Получить перечень документов по определенной цепочке с загрузкой статусов  без загрузки их тел, комментариев, пакетов, тегов 
+  https://edo-v2.edi-n.com/api/eds/chain?gln=9864232304302&chain_uuid=0fe60377-51db-4b7a-b7eb-cdf5fa91a46a&load_docs=true&load_bodies=false&load_package=false&load_comments=false&load_tags=false&load_statuses=true
 
 --------------
 
@@ -214,127 +222,130 @@
 .. code:: ruby
 
     {
-  "id": 1005,
-  "uuid": "73ee333d-ca3d-4c93-97fa-0b75d58b0ff3",
-  "packageID": 0,
-  "type": {
-    "type": 5,
-    "title": "ordrsp",
-    "description": "Подтверждение заказа"
-  },
-  "docsCount": 6,
-  "lastInDocID": 1005,
-  "lastOutDocID": 1055,
-  "partnerId": 9,
-  "important": false,
-  "status": {
-    "status": 2,
-    "title": "sent"
-  },
-  "visualStatus": 0,
-  "archive": false,
-  "childs": [
-    {
-      "body": {
-        "forms": {}
-      },
-      "attachments": [],
-      "comments": [],
-      "doc_id": 1005,
-      "doc_uuid": "97c06d02-7c3c-4467-aaac-4a808078609f",
-      "uuidSender": "4820128010004",
-      "uuidReceiver": "9864065702429",
-      "docNumber": "6422722fb78c4509b06eac43758e1545",
-      "dateCreated": 1549025901,
-      "dateChanged": 1549025901,
-      "dateRead": 0,
-      "docDate": 1550181600,
-      "chain_id": 1005,
-      "chain_uuid": "73ee333d-ca3d-4c93-97fa-0b75d58b0ff3",
-      "family": 1,
-      "hash": "A1E7FAD0A57C43C3200DFF024AD4124F",
-      "type": {
-        "type": 2,
-        "title": "orders",
-        "description": "Заказ"
-      },
-      "status": {
-        "status": 4,
-        "title": "inbox"
-      },
-      "exchange_status": "000000000000000000000000",
-      "is_archive": false,
-      "extraFields": {
-        "buyer_uuid": "4820128010004",
-        "doc_num": "6422722fb78c4509b06eac43758e1545",
-        "order_number": "6422722fb78c4509b06eac43758e1545",
-        "ftpex_file_date": "1549025900",
-        "supplier_uuid": "9864065702429",
-        "delivery_place_uuid": "4820128019007",
-        "order_date": "1550181600",
-        "delivery_date": "1551477600",
-        "ftpex_file_name": "highload_orders_test.xml",
-        "contract_number": "334455",
-        "sender": "4820128010004",
-        "doc_date": "1550181600",
-        "recipient": "9864065702429",
-        "action": "0"
-      },
-      "tags": [],
-      "statuses": [],
-      "multiExtraFields": {}
-    },
-    ...
-    {
-      "body": {
-        "forms": {}
-      },
-      "attachments": [],
-      "comments": [],
-      "doc_id": 1055,
-      "doc_uuid": "8c956e06-d681-4389-868e-ab27e587b3bb",
-      "uuidSender": "9864065702429",
-      "uuidReceiver": "4820128010004",
-      "docNumber": "6422722fb78c4509b06eac43758e1545",
-      "dateCreated": 1555406695,
-      "dateChanged": 1555407136,
-      "dateRead": 0,
-      "docDate": 1550188800,
-      "chain_id": 1005,
-      "chain_uuid": "73ee333d-ca3d-4c93-97fa-0b75d58b0ff3",
-      "family": 1,
-      "hash": "765B2DEFE72AEA34CA4A8507E473E76F",
-      "type": {
-        "type": 5,
-        "title": "ordrsp",
-        "description": "Подтверждение заказа"
-      },
-      "status": {
-        "status": 2,
-        "title": "sent"
-      },
-      "exchange_status": "000000000000000000000000",
-      "is_archive": false,
-      "extraFields": {
-        "order_date": "1550181600",
-        "delivery_date": "1551477600",
-        "contract_number": "334455",
-        "sender": "4820128010004",
-        "buyer_uuid": "4820128010004",
-        "doc_num": "6422722fb78c4509b06eac43758e1545",
-        "order_number": "6422722fb78c4509b06eac43758e1545",
-        "doc_date": "1550188800",
-        "action": "29",
-        "supplier_uuid": "9864065702429",
-        "delivery_place_uuid": "4820128019007"
-      },
-      "tags": [],
-      "statuses": [],
-      "multiExtraFields": {}
+        "id": 1,
+        "uuid": "0fe60377-51db-4b7a-b7eb-cdf5fa91a46a",
+        "packageID": 0,
+        "type": {
+            "type": 5,
+            "title": "ordrsp",
+            "description": "Подтверждение заказа"
+        },
+        "docsCount": 13,
+        "lastInDocID": 1,
+        "lastOutDocID": 29,
+        "partnerId": 0,
+        "important": false,
+        "status": {
+            "status": 2,
+            "title": "sent"
+        },
+        "visualStatus": 0,
+        "archive": false,
+        "childs": [
+            {
+                "body": {
+                    "forms": {}
+                },
+                "attachments": [],
+                "comments": [],
+                "doc_id": 1,
+                "doc_uuid": "bf8dacb1-7b61-4c9c-ab36-ac37620db051",
+                "uuidSender": "9864232304319",
+                "uuidReceiver": "9864232304302",
+                "docNumber": "1001",
+                "dateCreated": 1555487166,
+                "dateChanged": 1555487166,
+                "dateRead": 1555497325,
+                "docDate": 1555448400,
+                "chain_id": 1,
+                "chain_uuid": "0fe60377-51db-4b7a-b7eb-cdf5fa91a46a",
+                "family": 1,
+                "hash": "A1FF5B519289B936A09E99514277F429",
+                "type": {
+                    "type": 2,
+                    "title": "orders",
+                    "description": "Заказ"
+                },
+                "status": {
+                    "status": 5,
+                    "title": "read"
+                },
+                "exchange_status": "000000000000000000000000",
+                "is_archive": false,
+                "extraFields": {
+                    "sub_doc_type_id": "2",
+                    "buyer_uuid": "9864232304319",
+                    "doc_num": "1001",
+                    "order_number": "1001",
+                    "ftpex_file_date": "1555487160",
+                    "supplier_uuid": "9864232304302",
+                    "delivery_place_uuid": "9864232304562",
+                    "order_date": "1555448400",
+                    "delivery_date": "1556485200",
+                    "ftpex_file_name": "order_20190417104600_475593380.xml",
+                    "contract_number": "Дог 1",
+                    "sender": "9864232304319",
+                    "doc_date": "1555448400",
+                    "recipient": "9864232304302",
+                    "action": "0"
+                },
+                "tags": [],
+                "statuses": [],
+                "multiExtraFields": {}
+            },
+
+            ...
+            
+            {
+                "body": {
+                    "forms": {}
+                },
+                "attachments": [],
+                "comments": [],
+                "doc_id": 29,
+                "doc_uuid": "cb2f183f-ccbc-467b-9eb2-90b2c1ff8f5c",
+                "uuidSender": "9864232304302",
+                "uuidReceiver": "9864232304319",
+                "docNumber": "АФ00-000001",
+                "dateCreated": 1556115021,
+                "dateChanged": 1556115022,
+                "dateRead": 0,
+                "docDate": 1556116482,
+                "chain_id": 1,
+                "chain_uuid": "0fe60377-51db-4b7a-b7eb-cdf5fa91a46a",
+                "family": 1,
+                "hash": "0F9CEEC0717992EB76A848F2E106D2D0",
+                "type": {
+                    "type": 5,
+                    "title": "ordrsp",
+                    "description": "Подтверждение заказа"
+                },
+                "status": {
+                    "status": 2,
+                    "title": "sent"
+                },
+                "exchange_status": "000000000000000000000000",
+                "is_archive": false,
+                "extraFields": {
+                    "order_date": "1555448400",
+                    "delivery_date": "1556485200",
+                    "contract_number": "Дог 1",
+                    "sender": "9864232304319",
+                    "buyer_uuid": "9864232304319",
+                    "doc_num": "АФ00-000001",
+                    "order_number": "1001",
+                    "doc_date": "1556116482",
+                    "action": "4",
+                    "supplier_uuid": "9864232304302",
+                    "delivery_place_uuid": "9864232304562"
+                },
+                "tags": [],
+                "statuses": [],
+                "multiExtraFields": {}
+            }
+        ],
+        "hash": "ABB416F3FF3B5027D212D62DD9F99E94"
     }
-  ],
-  "hash": "48800BFDDF4C38598D723A42F0384F03"
-  } 
 
 
 

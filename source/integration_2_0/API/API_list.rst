@@ -5,8 +5,13 @@ API
     :maxdepth: 1
    
    Authorization
-   DocsSearch
+   :name: Работа с документами
    EdsDoc
+   DocSend
+   DocsSearch
+   EdsChain
+   DocBody
+   :name: Работа со справочниками
    OasUser
    AccountIdentifiers
    OasRetailers
@@ -14,7 +19,6 @@ API
    Allretailers
    OasUnits
    OasIdentifiers
-   EdsChain
-   DocBody
-   DocSend
+
+   
 
