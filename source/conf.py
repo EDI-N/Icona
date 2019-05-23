@@ -114,6 +114,8 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
+# Этот кусочек транслируется на каждую страничку для того, чтобы можно было заюзать цвет и размер шрифта
+rst_epilog = "\n.. include:: _static/text_color_and_size.rst\n"
 
 # -- Options for HTML output ----------------------------------------------
 
