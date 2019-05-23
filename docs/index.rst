@@ -52,6 +52,9 @@
     :caption: This is an incredibly long caption for a long menu
 
     demo/long
+    demo/ORDRSP_1
+    demo/DESADV_1
+    demo/INVOICE_1
 
 
 
