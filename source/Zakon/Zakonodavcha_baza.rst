@@ -1,11 +1,9 @@
 Закони, підзаконні нормативно-правові акти, які регулюють питання електронного документообігу та електронних довірчих послуг
 ====================================
 
- .red {
-    color: red;
- }
+.. role:: red
 
-This is :red:`red !` And :blue:`this part is blue`.
+An example of using :red:`interpreted text`
 
 
 
