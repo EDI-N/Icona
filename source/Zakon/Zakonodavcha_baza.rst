@@ -5,6 +5,10 @@
 
 An example of using :red:`interpreted text`
 
+:red: `interpreted text`
+
+:blink:`Дискотека!!!`
+
 
 
 
