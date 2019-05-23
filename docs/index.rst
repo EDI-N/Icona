@@ -1,8 +1,12 @@
 .. include:: ../README.rst
 
+
+
+
 .. toctree::  
    :maxdepth: 2
    
+   table_cat/table_test
    edin_doc/general/index
    edin_doc/retail/index
    edin_doc/integration/who_wants_to_live_forever

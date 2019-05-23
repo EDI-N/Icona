@@ -3,6 +3,25 @@
 Не забываем о названии
 ######################
 
+
+.. image:: files/some_pics/corrected.jpg
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+
+
+.. csv-table:: Таблица давай!!!
+  :file: files/newCSV.csv
+  :widths:  1, 7, 12, 41
+  :header-rows: 1
+  :stub-columns: 1
+
+
+
+
+
+
+
 допустим я напишу сюда Сабака_ (и это выражение должно быть ссылкой на википедию, как и `Кошка <https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0>`__)
 
 .. _Сабака: https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0
