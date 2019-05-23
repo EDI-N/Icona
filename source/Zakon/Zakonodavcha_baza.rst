@@ -2,12 +2,17 @@
 ====================================
 
 .. role:: red
+
 .. role:: blink
+
+.. role:: fuchsia
+
 
 An example of using :red:`interpreted text`
 
 :red:`interpreted text`
-| :red:`interpreted text`
+
+:fuchsia:`interpreted text`
 
 :blink:`Дискотека!!!`
 
