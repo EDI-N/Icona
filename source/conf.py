@@ -143,6 +143,11 @@ else:
     ],
 }
 
+# попробуем добавить чтение кастомного джеес
+def setup(app):
+    app.add_javascript('_static/contentui.js')
+
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
