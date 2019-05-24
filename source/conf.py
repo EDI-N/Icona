@@ -29,8 +29,11 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+#будем пробовать сделать хайд шоу
+
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinxcontrib.contentui',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -116,9 +119,6 @@ todo_include_todos = False
 
 # Этот кусочек транслируется на каждую страничку для того, чтобы можно было заюзать цвет и размер шрифта
 # rst_epilog = "\n.. include:: _static/text_color_and_size.rst\n"
-
-#будем пробовать сделать хайд шоу
-extensions = ['sphinxcontrib.contentui']
 
 # -- Options for HTML output ----------------------------------------------
 
