@@ -117,6 +117,9 @@ todo_include_todos = False
 # Этот кусочек транслируется на каждую страничку для того, чтобы можно было заюзать цвет и размер шрифта
 # rst_epilog = "\n.. include:: _static/text_color_and_size.rst\n"
 
+#будем пробовать сделать хайд шоу
+extensions = ['sphinxcontrib.contentui']
+
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
