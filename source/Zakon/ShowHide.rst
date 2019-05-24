@@ -1,7 +1,9 @@
+Toggle headers
+##################
+
 .. _toggle-header:
 
-Toggle headers
---------------
+
 
 .. rst:directive:: .. toggle-header:: class
 
@@ -19,6 +21,13 @@ Full example::
 
 
 will be rendered like this:
+
+
+.. toggle-header::
+   :header: Example 1 **Show/Hide Code**
+
+   Content for header
+
 
 .. toggle-header::
     :header: Example 1 **Show/Hide Code**
@@ -79,3 +88,10 @@ More examples
     Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
     voluptatibus maiores alias consequatur aut perferendis doloribus
     asperiores repellat.
+
+jgf-jgf
+
+.. toggle-header::
+    :header: Example 1 **Show/Hide Code**
+
+        Content for header
