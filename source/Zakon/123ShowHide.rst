@@ -1,9 +1,9 @@
-Toggle headers
+Toggle headers111
 ##################
 
 .. _toggle-header:
 
-
+.. toggle-header::
 
 .. rst:directive:: .. toggle-header:: class
 
