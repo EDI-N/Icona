@@ -54,6 +54,6 @@ EDIN | Электронный документооборот для бизнес
    :maxdepth: 2
    :caption: ЗАКОНОДАТЕЛЬНАЯ БАЗА
 
-   Zakon/Zakonodavcha_baza
+   Zakon/law_general_list
    
    
