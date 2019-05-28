@@ -33,7 +33,7 @@ import os
 
 extensions = [
     'sphinx.ext.autodoc',
-    'ext.contentui',
+    'contentui.ext.contentui',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
