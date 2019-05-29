@@ -34,10 +34,10 @@ import os
 #будем пробовать добавить хайд шоу
 sys.path.append(os.path.abspath('sphinxcontrib'))
 
-
+#    'sphinx.ext.autodoc',
 
 extensions = [
-    'sphinx.ext.autodoc',
+    'contentui',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
