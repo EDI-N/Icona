@@ -184,18 +184,3 @@
 }
 
 
-
-/*еще сюда пихаем немножко hide/show*/
-
-.toggle .header {
-   display: block;
-   clear: both;
-}
-
-.toggle .header:after {
-   content: " ▶";
-}
-
-.toggle .header.open:after {
-   content: " ▼";
-}
