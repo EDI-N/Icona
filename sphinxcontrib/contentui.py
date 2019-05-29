@@ -61,7 +61,7 @@ class ContentTabsContainerDirective(Directive):
 
 class ToggleDirective(Directive):
     has_content = True
-    option_spec = {'fafafa': directives.unchanged}
+    option_spec = {'header': directives.unchanged}
     optional_arguments = 1
 
     def run(self):
@@ -69,11 +69,11 @@ class ToggleDirective(Directive):
         node['classes'].append('toggle-content')
 
         par = nodes.container()
-        par['classes'].append('toggle-fafafa')
+        par['classes'].append('toggle-header')
         if self.arguments and self.arguments[0]:
             par['classes'].append(self.arguments[0])
 
-        self.state.nested_parse(StringList([self.options["fafafa"]]), self.content_offset, par)
+        self.state.nested_parse(StringList([self.options["header"]]), self.content_offset, par)
         self.state.nested_parse(self.content, self.content_offset, node)
 
         return [par, node]
@@ -101,7 +101,7 @@ def copy_assets(app, exception):
 def setup(app):
     app.add_directive('content-tabs',  ContentTabsDirective)
     app.add_directive('tab-container', ContentTabsContainerDirective)
-    app.add_directive('toggle-fafafa', ToggleDirective)
+    app.add_directive('toggle-header', ToggleDirective)
     
     app.connect('builder-inited', add_assets)
     app.connect('build-finished', copy_assets)

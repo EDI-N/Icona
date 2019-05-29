@@ -1,79 +1,46 @@
-Toggle headers111
-##################
+.. _toggle-header:
 
+Toggle headers
+--------------
 
-.. container:: toggle
+.. rst:directive:: .. toggle-header:: class
 
-    .. container:: fafafa
-
-        **Show/Hide Code**
-
-    .. code-block:: xml
-       :linenos:
-
-       from plone import api
-       ...
-
-
-
-
-
-
-
-
-дальше там трешачина туда не смотри
-
-
-
-.. _toggle-fafafa:
-
-.. toggle-fafafa::
-
-.. rst:directive:: .. toggle-fafafa:: class
-
-"toggle-fafafa" directive creates a block with a visible heading for the
+"toggle-header" directive creates a block with a visible heading for the
 hidden content. The heading can be clicked to view/hide the hidden content.
 Optional attribute `class` adds css class for hidden content.
-Required option `fafafa` sets text of the heading of the hidden content.
+Required option `header` sets text of the heading of the hidden content.
 
 Full example::
 
-    .. toggle-fafafa::
-        :fafafa: Example 1 **Show/Hide Code**
+    .. toggle-header::
+        :header: Example 1 **Show/Hide Code**
 
-            Content for fafafa
+            Content for header
 
 
 will be rendered like this:
 
+.. toggle-header::
+    :header: Example 1 **Show/Hide Code**
 
-.. toggle-fafafa::
-   :fafafa: Example 1 **Show/Hide Code**
-
-   Content for fafafa
-
-
-.. toggle-fafafa::
-    :fafafa: Example 1 **Show/Hide Code**
-
-    Content for fafafa
+    Content for header
 
 Generated HTML code:
 
 .. code-block:: html
 
-    <div class="toggle-fafafa open">
+    <div class="toggle-header open">
         <p>Example <strong>Show/Hide Code</strong></p>
     </div>
     <div class="toggle-content docutils container">
-        Content for fafafa
+        Content for header
     </div>
 
 More examples
 ~~~~~~~~~~~~~
 
-.. toggle-fafafa::
-    :fafafa: Example 1 **Show/Hide Code**
+.. toggle-header::
+    :header: Example 1 **Show/Hide Code**
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -83,8 +50,8 @@ More examples
     culpa qui officia deserunt mollit anim id est laborum
 
 
-.. toggle-fafafa:: rubric
-    :fafafa: Example 2
+.. toggle-header:: rubric
+    :header: Example 2
 
     Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
     accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
@@ -112,10 +79,3 @@ More examples
     Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
     voluptatibus maiores alias consequatur aut perferendis doloribus
     asperiores repellat.
-
-jgf-jgf
-
-.. toggle-fafafa::
-    :fafafa: Example 1 **Show/Hide Code**
-
-        Content for fafafa
