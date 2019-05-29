@@ -32,7 +32,7 @@ import os
 
 
 #будем пробовать сделать хайд шоу
-from sphinxcontrib.contentui import ToggleDirective
+#from sphinxcontrib.contentui import ToggleDirective
 
 
 
