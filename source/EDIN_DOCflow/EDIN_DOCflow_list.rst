@@ -2,7 +2,7 @@ EDIN-DOCflow
 #######################
 
 .. toctree::
-    :maxdepth: 1
+   :maxdepth: 1
    
   edin_docflow/instruktsia-avtorizatsia
   edin_docflow/instruktsia-nastroyka-ecp
