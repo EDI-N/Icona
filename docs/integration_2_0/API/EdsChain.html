@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<title>Получение конкретной цепочки документов</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="id1">
+<h1 class="title">Получение конкретной цепочки документов</h1>
+
+<p>Для работы с этим методом пользователь должен быть <a class="reference external" href="https://ссылканаавторизацию">авторизированным</a> .</p>
+<p>С помощью метода <strong>api/eds/chain</strong> и задаваемых параметров получить (выгрузить) необходимые данные конкретной цепочки документов.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head"><strong>Метод запроса</strong></th>
+<th class="head"><strong>HTTP GET</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Content-Type</strong></td>
+<td>application/json (тело запроса/ответа в json формате в теле HTTP запроса</td>
+</tr>
+<tr><td><strong>URL запроса</strong></td>
+<td><a class="reference external" href="https://edo-v2.edi-n.com/api/eds/chain?gln=9864065702429&amp;chain_uuid=9fe45d32-35c7-44d0-9131-7257fc0c0f39&amp;load_docs=true&amp;load_bodies=true&amp;load_package=true&amp;load_comments=true&amp;load_tags=true&amp;load_statuses=true">https://edo-v2.edi-n.com/api/eds/chain?gln=9864065702429&amp;chain_uuid=9fe45d32-35c7-44d0-9131-7257fc0c0f39&amp;load_docs=true&amp;load_bodies=true&amp;load_package=true&amp;load_comments=true&amp;load_tags=true&amp;load_statuses=true</a></td>
+</tr>
+<tr><td><strong>Параметры, передаваемые в URL (вместе с адресом метода)</strong></td>
+<td><p class="first">В строке заголовка (Header) &quot;Set-Cookie&quot; обязательно передается <strong>SID</strong> - токен полученный при авторизации</p>
+<p><strong>Обязательные url-параметры:</strong></p>
+<p><strong>gln</strong> - строка(13); номер GLN организации, которая связана с авторизированным пользователем платформы EDIN 2.0 на уровне аккаунта</p>
+<p><strong>chain_uuid</strong> - строка; ID цепочки</p>
+<p><strong>Опциональные url-параметры (boolean фильтры):</strong></p>
+<p><strong>load_docs</strong> - загружать ли документы относящиеся к цепочке</p>
+<p><strong>load_bodies</strong> - загружать ли тела документов</p>
+<p><strong>load_package</strong> - загружать ли пакеты</p>
+<p><strong>load_comments</strong> - загружать ли комментарии</p>
+<p><strong>load_tags</strong> - загружать ли теги к документам</p>
+<p class="last"><strong>load_statuses</strong> - загружать ли статусы к документам</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="hint">
+<p class="first admonition-title">Hint</p>
+<p>Также возможно выполнить запрос в виде curl-строки:</p>
+<p class="last">curl -X GET '<a class="reference external" href="https://edo-v2.edi-n.com/api/eds/chain?gln=9864065702429&amp;chain_uuid=9fe45d32-35c7-44d0-9131-7257fc0c0f39&amp;load_docs=true&amp;load_bodies=true&amp;load_package=true&amp;load_comments=true&amp;load_tags=true&amp;load_statuses=true">https://edo-v2.edi-n.com/api/eds/chain?gln=9864065702429&amp;chain_uuid=9fe45d32-35c7-44d0-9131-7257fc0c0f39&amp;load_docs=true&amp;load_bodies=true&amp;load_package=true&amp;load_comments=true&amp;load_tags=true&amp;load_statuses=true</a>' -b 'SID=458a0d38-5b56-4b8e-8998-009a1edd31eb'</p>
+</div>
+<p>Спецификация для расшифровки ключей curl запроса: <a class="reference external" href="https://curl.haxx.se/docs/manpage.html">https://curl.haxx.se/docs/manpage.html</a></p>
+<hr class="docutils" />
+<p><strong>JSON-параметры в теле HTTP запроса/ответа</strong></p>
+<hr class="docutils" />
+<p><strong>REQUEST</strong></p>
+<hr class="docutils" />
+<p>В этом методе json-тело <strong>запроса</strong> отсутствует (другие данные передавать не нужно).</p>
+<hr class="docutils" />
+<p><strong>RESPONSE</strong></p>
+<hr class="docutils" />
+<p>Таблица 4 - Описание json-параметров, которые могут передаваться в <strong>ответ</strong> на метод API</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head stub">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><th class="stub"></th>
+<td id="xchain">Объект <strong>XChain</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><th class="stub">id</th>
+<td>long</td>
+<td>ID шарда</td>
+</tr>
+<tr><th class="stub">uuid</th>
+<td>UUID</td>
+<td>UUID цепочки документов</td>
+</tr>
+<tr><th class="stub">packageID</th>
+<td>long</td>
+<td>ID пакета</td>
+</tr>
+<tr><th class="stub"><strong>type</strong></th>
+<td><a class="reference internal" href="#xdoctype">XDocType</a></td>
+<td>объект; тип документа</td>
+</tr>
+<tr><th class="stub">docsCount</th>
+<td>int</td>
+<td>количество документов в цепочке</td>
+</tr>
+<tr><th class="stub">lastInDocID</th>
+<td>long</td>
+<td>id последнего входящего документа в цепочке</td>
+</tr>
+<tr><th class="stub">lastOutDocID</th>
+<td>long</td>
+<td>id последнего исходящего документа в цепочке</td>
+</tr>
+<tr><th class="stub">partnerId</th>
+<td>long</td>
+<td>id розничной сети</td>
+</tr>
+<tr><th class="stub">important</th>
+<td>boolean</td>
+<td>флаг наличия отметки &quot;важный&quot; документ</td>
+</tr>
+<tr><th class="stub"><strong>status</strong></th>
+<td><a class="reference internal" href="#xchainstatus">XChainStatus</a></td>
+<td>объект; статус пары документов у отправителя и получателя</td>
+</tr>
+<tr><th class="stub">visualStatus</th>
+<td>int</td>
+<td>флаг, который содержит номер иконки</td>
+</tr>
+<tr><th class="stub">archive</th>
+<td>boolean</td>
+<td>флаг; &quot;архивный&quot; документ или нет</td>
+</tr>
+<tr><th class="stub"><strong>childs</strong></th>
+<td>List&lt;<a class="reference internal" href="#xdoc">XDoc</a>&gt;</td>
+<td>массив объектов; данные документов/квитанций</td>
+</tr>
+<tr><th class="stub"><strong>chainsInPackage</strong></th>
+<td>List&lt;<a class="reference internal" href="#xchain">XChain</a>&gt;</td>
+<td>массив объектов; данные связанных цепочек</td>
+</tr>
+<tr><th class="stub">hash</th>
+<td>String</td>
+<td>хэш-значение, полученное в результате обработки</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 5 - Описание параметров объекта <strong>XChainStatus</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head stub">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><th class="stub"></th>
+<td id="xchainstatus">Объект <strong>XChainStatus</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><th class="stub">state</th>
+<td>int</td>
+<td>id статуса</td>
+</tr>
+<tr><th class="stub">title</th>
+<td>String</td>
+<td>статус</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 6 - Описание параметров объекта <strong>XDocStatus</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdocstatus"><strong>Объект XDocStatus</strong></td>
+<td><a class="reference internal" href="#id2">подробнее</a></td>
+</tr>
+<tr><td>state</td>
+<td>int</td>
+<td>id статуса</td>
+</tr>
+<tr><td>title</td>
+<td>String</td>
+<td>статус</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 7 - Описание параметров объекта <strong>XDoc</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdoc"><strong>Объект XDoc</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>body</td>
+<td><a class="reference internal" href="#xdocbodyforms">XDocBodyForms</a></td>
+<td>объект; тела документов</td>
+</tr>
+<tr><td>attachments</td>
+<td>List&lt;<a class="reference internal" href="#xdocattachment">XDocAttachment</a>&gt;</td>
+<td>массив объектов; вложение (может не использоваться)</td>
+</tr>
+<tr><td>comments</td>
+<td><a class="reference internal" href="#xdoccommentslist">XDocCommentsList</a></td>
+<td>объект (в котором массив объектов); список комментариев</td>
+</tr>
+<tr><td>doc_id</td>
+<td>long</td>
+<td>id документа</td>
+</tr>
+<tr><td>doc_uuid</td>
+<td>UUID</td>
+<td>уникальный идентификатор документа/квитанции</td>
+</tr>
+<tr><td>uuidSender</td>
+<td>String</td>
+<td>уникальный идентификатор отправителя</td>
+</tr>
+<tr><td>uuidReceiver</td>
+<td>String</td>
+<td>уникальный идентификатор получателя</td>
+</tr>
+<tr><td>docNumber</td>
+<td>String</td>
+<td>номер документа</td>
+</tr>
+<tr><td>dateCreated</td>
+<td>long</td>
+<td>дата создания документа (unix timestamp)</td>
+</tr>
+<tr><td>dateChanged</td>
+<td>long</td>
+<td>дата последнего изменения документа (unix timestamp)</td>
+</tr>
+<tr><td>dateRead</td>
+<td>long</td>
+<td>дата прочтения документа (unix timestamp)</td>
+</tr>
+<tr><td>docDate</td>
+<td>long</td>
+<td>дата документа, указанная в документе</td>
+</tr>
+<tr><td>chain_id</td>
+<td>long</td>
+<td>id цепочки документов</td>
+</tr>
+<tr><td>chain_uuid</td>
+<td>UUID</td>
+<td>уникальный идентификатор цепочки документов</td>
+</tr>
+<tr><td>family</td>
+<td>int</td>
+<td>семейство (EDI / UZD)</td>
+</tr>
+<tr><td>hash</td>
+<td>String</td>
+<td>хэш-значение, полученное в результате обработки</td>
+</tr>
+<tr><td>type</td>
+<td>XDocType</td>
+<td>объект; тип документа</td>
+</tr>
+<tr><td>status</td>
+<td><a class="reference internal" href="#xdocstatus">XDocStatus</a></td>
+<td>объект; статус пары документов у отправителя и получателя</td>
+</tr>
+<tr><td>exchange_status</td>
+<td>String</td>
+<td>сабстатус документа</td>
+</tr>
+<tr><td>is_archive</td>
+<td>boolean</td>
+<td>флаг; &quot;архивный&quot; документ или нет</td>
+</tr>
+<tr><td>signInfo</td>
+<td><a class="reference internal" href="#xdocsigninfo">XDocSignInfo</a></td>
+<td>объект; данные о подписях</td>
+</tr>
+<tr><td>chain</td>
+<td>XChain</td>
+<td>объект; данные связанных цепочек</td>
+</tr>
+<tr><td>extraFields</td>
+<td>Map&lt;String, String&gt;</td>
+<td>массив объектов; набор индексов (аналог индексных таблиц)</td>
+</tr>
+<tr><td>tags</td>
+<td>List&lt;<a class="reference internal" href="#xtag">XTag</a>&gt;</td>
+<td>массив объектов; прикрепленные теги</td>
+</tr>
+<tr><td>statuses</td>
+<td>List&lt;<a class="reference internal" href="#xstatus">XStatus</a>&gt;</td>
+<td>массив объектов; статусы об обработке отправленных документов</td>
+</tr>
+<tr><td>multiExtraFields</td>
+<td>Map&lt;String, List&lt;String&gt;&gt;</td>
+<td><blockquote class="first last">
+массив объектов; мультииндекс. Пример: {'key1': ['val1', 'val2'], 'key2': ['val1', 'val2']}. Используется, например для обработки передаваемой строки =&gt; разбивка строки по условию =&gt; индексирование каждого куска</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 8 - Описание параметров объекта <strong>XTag</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xtag"><strong>Объект XTag</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>id</td>
+<td>long</td>
+<td>id тега</td>
+</tr>
+<tr><td>name</td>
+<td>String</td>
+<td>содержание тега</td>
+</tr>
+<tr><td>shortName</td>
+<td>String</td>
+<td>краткое наименование тега</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 9 - Описание параметров объекта <strong>XStatus</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xstatus"><strong>Объект XStatus</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>docId</td>
+<td>long</td>
+<td>id документа/квитанции</td>
+</tr>
+<tr><td>date</td>
+<td>long</td>
+<td>дата статуса; формат unix timestamp</td>
+</tr>
+<tr><td>type</td>
+<td>int</td>
+<td>тип статуса</td>
+</tr>
+<tr><td>text</td>
+<td>String</td>
+<td>содержание статуса</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 10 - Описание параметров объекта <strong>XDocSignInfo</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdocsigninfo"><strong>Объект XDocSignInfo</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>doc_id</td>
+<td>long</td>
+<td>id документа/квитанции</td>
+</tr>
+<tr><td>date</td>
+<td>long</td>
+<td>дата подписания; формат unix timestamp</td>
+</tr>
+<tr><td>count</td>
+<td>short</td>
+<td>количество подписей</td>
+</tr>
+<tr><td>info</td>
+<td>String</td>
+<td>дополнительная информация</td>
+</tr>
+<tr><td>hash</td>
+<td>String</td>
+<td>хэш-значение, полученное в результате обработки</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 11 - Описание параметров объекта <strong>XDocCommentsList</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdoccommentslist"><strong>Объект XDocCommentsList</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>XDocCommentsList</td>
+<td>List&lt;<a class="reference internal" href="#xdoccomment">XDocComment</a>&gt;</td>
+<td>массив объектов; комментарии к документу</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 12 - Описание параметров объекта <strong>XDocComment</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdoccomment"><strong>Объект XDocComment</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>id</td>
+<td>long</td>
+<td>id комментария</td>
+</tr>
+<tr><td>docUUID</td>
+<td>UUID</td>
+<td>уникальный идентификатор документа</td>
+</tr>
+<tr><td>createTimestamp</td>
+<td>long</td>
+<td>дата создания комментария в формате timestamp</td>
+</tr>
+<tr><td>authorLogin</td>
+<td>String</td>
+<td>автор комментария</td>
+</tr>
+<tr><td>comment</td>
+<td>String</td>
+<td>содержание комментария</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 13 - Описание параметров объекта <strong>XDocAttachment</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdocattachment"><strong>Объект XDocAttachment</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>id</td>
+<td>long</td>
+<td>id вложения</td>
+</tr>
+<tr><td>docUUID</td>
+<td>UUID</td>
+<td>уникальный идентификатор документа</td>
+</tr>
+<tr><td>fileName</td>
+<td>String</td>
+<td>наименование файла</td>
+</tr>
+<tr><td>createDate</td>
+<td>long</td>
+<td>дата создания вложения; формат unix timestamp</td>
+</tr>
+<tr><td>type</td>
+<td>String</td>
+<td>тип вложения</td>
+</tr>
+<tr><td>base64content</td>
+<td>String</td>
+<td>содержание вложения в BASE64</td>
+</tr>
+<tr><td>content</td>
+<td>byte[]</td>
+<td>содержание вложения в целочисленном виде</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 14 - Описание параметров объекта <strong>XDocBodyForms</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdocbodyforms"><strong>Объект XDocBodyForms</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>forms</td>
+<td>HashMap&lt;String, <a class="reference internal" href="#xdocbody">XDocBody</a>&gt;</td>
+<td>массив объектов; тело документа</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 15 - Описание параметров объекта <strong>XDocBody</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdocbody"><strong>Объект XDocBody</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>type</td>
+<td><a class="reference internal" href="#xdocbodytype">XDocBodyType</a></td>
+<td>объект; тип тела документа:
+CONTENT = 1; - содержание в байтах
+JSON = 2; - содержание в json формате
+SIGN = 3; - содержание подписи
+STAMP = 4;
+CRYPTED = 5; - содержание в зашифрованном виде
+UZDRESPONSE = 6;</td>
+</tr>
+<tr><td>base64content</td>
+<td>String</td>
+<td>содержание тела документа в BASE64</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 16 - Описание параметров объекта <strong>XDocBodyType</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdocbodytype"><strong>Объект XDocBodyType</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>id</td>
+<td>int</td>
+<td>id типа тела документа</td>
+</tr>
+<tr><td>name</td>
+<td>String</td>
+<td>наименование типа тела документа</td>
+</tr>
+</tbody>
+</table>
+<p>Таблица 17 - Описание параметров объекта <strong>XDocType</strong>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="11%" />
+<col width="20%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Параметр</th>
+<th class="head">Тип</th>
+<th class="head">Формат</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td></td>
+<td id="xdoctype">&nbsp;</td>
+<td>Объект <strong>XDocType</strong></td>
+<td><a class="reference internal" href="#id3">описание_параметров</a></td>
+</tr>
+<tr><td>type</td>
+<td>&nbsp;</td>
+<td>int</td>
+<td>id типа документа/квитанции</td>
+</tr>
+<tr><td>title</td>
+<td>&nbsp;</td>
+<td>String</td>
+<td>название документа/квитанции</td>
+</tr>
+<tr><td>description</td>
+<td>&nbsp;</td>
+<td>String</td>
+<td>описание документа/квитанции (наименование на русском)</td>
+</tr>
+</tbody>
+</table>
+<p id="id2">Таблица 18 - Описание <strong>DocStatus</strong> параметров (объект <a class="reference internal" href="#xdocstatus">XDocStatus</a>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">id статуса</th>
+<th class="head">статус</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>0</td>
+<td>ALL - любой статус</td>
+</tr>
+<tr><td>1</td>
+<td>OPEN - черновик(отправитель)</td>
+</tr>
+<tr><td>2</td>
+<td>SENT - отправлен(отправитель)</td>
+</tr>
+<tr><td>3</td>
+<td>DELIVERED - прочитан(отправитель)</td>
+</tr>
+<tr><td>4</td>
+<td>INBOX - доставлен/входящий(получатель)</td>
+</tr>
+<tr><td>5</td>
+<td>READ - прочитан(получатель)</td>
+</tr>
+<tr><td>6</td>
+<td>ERROR - ошибка</td>
+</tr>
+<tr><td>7</td>
+<td>DELETED - удален</td>
+</tr>
+</tbody>
+</table>
+<p id="id3">Таблица 19 - Описание <strong>DocType</strong> параметров (объект <a class="reference internal" href="#xdoctype">XDocType</a>)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="31%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">типа документа/квитанции</th>
+<th class="head">название документа/квитанции</th>
+<th class="head">описание документа/квитанции (наименование на русском)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>0</td>
+<td>all</td>
+<td>all</td>
+</tr>
+<tr><td>1</td>
+<td>invoice</td>
+<td>Счет</td>
+</tr>
+<tr><td>2</td>
+<td>orders</td>
+<td>Заказ</td>
+</tr>
+<tr><td>3</td>
+<td>recadv</td>
+<td>Уведомление о приеме</td>
+</tr>
+<tr><td>4</td>
+<td>desadv</td>
+<td>Уведомление об отгрузке</td>
+</tr>
+<tr><td>5</td>
+<td>ordrsp</td>
+<td>Подтверждение заказа</td>
+</tr>
+<tr><td>6</td>
+<td>pricat</td>
+<td>Прайс-лист</td>
+</tr>
+<tr><td>10</td>
+<td>declar</td>
+<td>Налоговая накладная</td>
+</tr>
+<tr><td>11</td>
+<td>insdes</td>
+<td>Инструкция по доставке</td>
+</tr>
+<tr><td>13</td>
+<td>slsrpt</td>
+<td>Отчет о продажах</td>
+</tr>
+<tr><td>14</td>
+<td>invrpt</td>
+<td>Отчет об инвентаризации</td>
+</tr>
+<tr><td>15</td>
+<td>coacsu</td>
+<td>Акт сверки взаиморасчетов</td>
+</tr>
+<tr><td>16</td>
+<td>actset</td>
+<td>Акт взаимозачета</td>
+</tr>
+<tr><td>17</td>
+<td>iftmin</td>
+<td>Инструкция о транспортировке</td>
+</tr>
+<tr><td>18</td>
+<td>retann</td>
+<td>Уведомление о возврате</td>
+</tr>
+<tr><td>19</td>
+<td>iftmbf</td>
+<td>Заказ транспортировки</td>
+</tr>
+<tr><td>21</td>
+<td>mscons</td>
+<td>Отчет о предоставленых услугах</td>
+</tr>
+<tr><td>25</td>
+<td>retins</td>
+<td>Инструкция о возврате</td>
+</tr>
+<tr><td>28</td>
+<td>comdoc</td>
+<td>Коммерческий документ</td>
+</tr>
+<tr><td>29</td>
+<td>declarj12</td>
+<td>Корректировка к налоговой накладной</td>
+</tr>
+<tr><td>30</td>
+<td>condra</td>
+<td>Не структурированный документ</td>
+</tr>
+<tr><td>42</td>
+<td>iftmbc</td>
+<td>Подтверждение заказа транспортировки</td>
+</tr>
+<tr><td>59</td>
+<td>documentinvoice</td>
+<td>Товарная накладная</td>
+</tr>
+<tr><td>67</td>
+<td>doccorinvoice</td>
+<td>doccorinvoice</td>
+</tr>
+<tr><td>75</td>
+<td>waybill</td>
+<td>ТТН</td>
+</tr>
+<tr><td>79</td>
+<td>addbill</td>
+<td>addbill</td>
+</tr>
+<tr><td>98</td>
+<td>quotes</td>
+<td>Приложение к ув.об отгрузке</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p><strong>Примеры</strong></p>
+<hr class="docutils" />
+<p><strong>Запрос не содержит тела (json)</strong></p>
+<hr class="docutils" />
+<p><strong>Пример тела ответа (json):</strong></p>
+<pre class="code ruby literal-block">
+  <span class="punctuation">{</span>
+<span class="literal string double">&quot;id&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1005</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;73ee333d-ca3d-4c93-97fa-0b75d58b0ff3&quot;</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;packageID&quot;</span><span class="punctuation">:</span> <span class="literal number integer">0</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;type&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+  <span class="literal string double">&quot;type&quot;</span><span class="punctuation">:</span> <span class="literal number integer">5</span><span class="punctuation">,</span>
+  <span class="literal string double">&quot;title&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;ordrsp&quot;</span><span class="punctuation">,</span>
+  <span class="literal string double">&quot;description&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Подтверждение заказа&quot;</span>
+<span class="punctuation">},</span>
+<span class="literal string double">&quot;docsCount&quot;</span><span class="punctuation">:</span> <span class="literal number integer">6</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;lastInDocID&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1005</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;lastOutDocID&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1055</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;partnerId&quot;</span><span class="punctuation">:</span> <span class="literal number integer">9</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;important&quot;</span><span class="punctuation">:</span> <span class="keyword pseudo">false</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;status&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+  <span class="literal string double">&quot;status&quot;</span><span class="punctuation">:</span> <span class="literal number integer">2</span><span class="punctuation">,</span>
+  <span class="literal string double">&quot;title&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;sent&quot;</span>
+<span class="punctuation">},</span>
+<span class="literal string double">&quot;visualStatus&quot;</span><span class="punctuation">:</span> <span class="literal number integer">0</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;archive&quot;</span><span class="punctuation">:</span> <span class="keyword pseudo">false</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;childs&quot;</span><span class="punctuation">:</span> <span class="operator">[</span>
+  <span class="punctuation">{</span>
+    <span class="literal string double">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;forms&quot;</span><span class="punctuation">:</span> <span class="punctuation">{}</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;attachments&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;comments&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;doc_id&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1005</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;doc_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;97c06d02-7c3c-4467-aaac-4a808078609f&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;uuidSender&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128010004&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;uuidReceiver&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;9864065702429&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;docNumber&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;6422722fb78c4509b06eac43758e1545&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;dateCreated&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1549025901</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;dateChanged&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1549025901</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;dateRead&quot;</span><span class="punctuation">:</span> <span class="literal number integer">0</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;docDate&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1550181600</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;chain_id&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1005</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;chain_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;73ee333d-ca3d-4c93-97fa-0b75d58b0ff3&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;family&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;hash&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;A1E7FAD0A57C43C3200DFF024AD4124F&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;type&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;type&quot;</span><span class="punctuation">:</span> <span class="literal number integer">2</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;title&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;orders&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;description&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Заказ&quot;</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;status&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;status&quot;</span><span class="punctuation">:</span> <span class="literal number integer">4</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;title&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;inbox&quot;</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;exchange_status&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;000000000000000000000000&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;is_archive&quot;</span><span class="punctuation">:</span> <span class="keyword pseudo">false</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;extraFields&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;buyer_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128010004&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;doc_num&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;6422722fb78c4509b06eac43758e1545&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;order_number&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;6422722fb78c4509b06eac43758e1545&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;ftpex_file_date&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1549025900&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;supplier_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;9864065702429&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;delivery_place_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128019007&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;order_date&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1550181600&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;delivery_date&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1551477600&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;ftpex_file_name&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;highload_orders_test.xml&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;contract_number&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;334455&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;sender&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128010004&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;doc_date&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1550181600&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;recipient&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;9864065702429&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;action&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;0&quot;</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;tags&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;statuses&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;multiExtraFields&quot;</span><span class="punctuation">:</span> <span class="punctuation">{}</span>
+  <span class="punctuation">},</span>
+  <span class="operator">...</span>
+  <span class="punctuation">{</span>
+    <span class="literal string double">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;forms&quot;</span><span class="punctuation">:</span> <span class="punctuation">{}</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;attachments&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;comments&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;doc_id&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1055</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;doc_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;8c956e06-d681-4389-868e-ab27e587b3bb&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;uuidSender&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;9864065702429&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;uuidReceiver&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128010004&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;docNumber&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;6422722fb78c4509b06eac43758e1545&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;dateCreated&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1555406695</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;dateChanged&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1555407136</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;dateRead&quot;</span><span class="punctuation">:</span> <span class="literal number integer">0</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;docDate&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1550188800</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;chain_id&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1005</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;chain_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;73ee333d-ca3d-4c93-97fa-0b75d58b0ff3&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;family&quot;</span><span class="punctuation">:</span> <span class="literal number integer">1</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;hash&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;765B2DEFE72AEA34CA4A8507E473E76F&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;type&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;type&quot;</span><span class="punctuation">:</span> <span class="literal number integer">5</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;title&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;ordrsp&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;description&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Подтверждение заказа&quot;</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;status&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;status&quot;</span><span class="punctuation">:</span> <span class="literal number integer">2</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;title&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;sent&quot;</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;exchange_status&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;000000000000000000000000&quot;</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;is_archive&quot;</span><span class="punctuation">:</span> <span class="keyword pseudo">false</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;extraFields&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+      <span class="literal string double">&quot;order_date&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1550181600&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;delivery_date&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1551477600&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;contract_number&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;334455&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;sender&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128010004&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;buyer_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128010004&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;doc_num&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;6422722fb78c4509b06eac43758e1545&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;order_number&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;6422722fb78c4509b06eac43758e1545&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;doc_date&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1550188800&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;action&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;29&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;supplier_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;9864065702429&quot;</span><span class="punctuation">,</span>
+      <span class="literal string double">&quot;delivery_place_uuid&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;4820128019007&quot;</span>
+    <span class="punctuation">},</span>
+    <span class="literal string double">&quot;tags&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;statuses&quot;</span><span class="punctuation">:</span> <span class="operator">[]</span><span class="punctuation">,</span>
+    <span class="literal string double">&quot;multiExtraFields&quot;</span><span class="punctuation">:</span> <span class="punctuation">{}</span>
+  <span class="punctuation">}</span>
+<span class="operator">]</span><span class="punctuation">,</span>
+<span class="literal string double">&quot;hash&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;48800BFDDF4C38598D723A42F0384F03&quot;</span>
+<span class="punctuation">}</span>
+</pre>
+</div>
+</body>
+</html>
