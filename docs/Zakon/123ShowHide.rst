@@ -4,7 +4,7 @@ Toggle headers111
 
 .. container:: toggle
 
-    .. container:: header
+    .. container:: fafafa
 
         **Show/Hide Code**
 
@@ -25,55 +25,55 @@ Toggle headers111
 
 
 
-.. _toggle-header:
+.. _toggle-fafafa:
 
-.. toggle-header::
+.. toggle-fafafa::
 
-.. rst:directive:: .. toggle-header:: class
+.. rst:directive:: .. toggle-fafafa:: class
 
-"toggle-header" directive creates a block with a visible heading for the
+"toggle-fafafa" directive creates a block with a visible heading for the
 hidden content. The heading can be clicked to view/hide the hidden content.
 Optional attribute `class` adds css class for hidden content.
-Required option `header` sets text of the heading of the hidden content.
+Required option `fafafa` sets text of the heading of the hidden content.
 
 Full example::
 
-    .. toggle-header::
-        :header: Example 1 **Show/Hide Code**
+    .. toggle-fafafa::
+        :fafafa: Example 1 **Show/Hide Code**
 
-            Content for header
+            Content for fafafa
 
 
 will be rendered like this:
 
 
-.. toggle-header::
-   :header: Example 1 **Show/Hide Code**
+.. toggle-fafafa::
+   :fafafa: Example 1 **Show/Hide Code**
 
-   Content for header
+   Content for fafafa
 
 
-.. toggle-header::
-    :header: Example 1 **Show/Hide Code**
+.. toggle-fafafa::
+    :fafafa: Example 1 **Show/Hide Code**
 
-    Content for header
+    Content for fafafa
 
 Generated HTML code:
 
 .. code-block:: html
 
-    <div class="toggle-header open">
+    <div class="toggle-fafafa open">
         <p>Example <strong>Show/Hide Code</strong></p>
     </div>
     <div class="toggle-content docutils container">
-        Content for header
+        Content for fafafa
     </div>
 
 More examples
 ~~~~~~~~~~~~~
 
-.. toggle-header::
-    :header: Example 1 **Show/Hide Code**
+.. toggle-fafafa::
+    :fafafa: Example 1 **Show/Hide Code**
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -83,8 +83,8 @@ More examples
     culpa qui officia deserunt mollit anim id est laborum
 
 
-.. toggle-header:: rubric
-    :header: Example 2
+.. toggle-fafafa:: rubric
+    :fafafa: Example 2
 
     Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
     accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
@@ -115,7 +115,7 @@ More examples
 
 jgf-jgf
 
-.. toggle-header::
-    :header: Example 1 **Show/Hide Code**
+.. toggle-fafafa::
+    :fafafa: Example 1 **Show/Hide Code**
 
-        Content for header
+        Content for fafafa

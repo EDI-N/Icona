@@ -59,19 +59,19 @@
     margin-bottom: 40px;
 }
 
-.toggle-header {
+.toggle-fafafa {
     display: block;
     clear: both;
     cursor: pointer;
 }
-.toggle-header p {display: inline; }
-.toggle-header strong {color: #2980b9 }
+.toggle-fafafa p {display: inline; }
+.toggle-fafafa strong {color: #2980b9 }
 
-.toggle-header:after {
+.toggle-fafafa:after {
     content: " ▼";
 }
 
-.toggle-header.open:after {
+.toggle-fafafa.open:after {
     content: " ▲";
 }
 
