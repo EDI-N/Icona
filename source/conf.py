@@ -31,13 +31,14 @@ import os
 # ones.
 
 
-#будем пробовать сделать хайд шоу
-#from sphinxcontrib.contentui import ToggleDirective
+#будем пробовать добавить хайд шоу
+sys.path.append(os.path.abspath('sphinxcontrib'))
 
 
 
 extensions = [
     'sphinx.ext.autodoc',
+    'contentui',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
