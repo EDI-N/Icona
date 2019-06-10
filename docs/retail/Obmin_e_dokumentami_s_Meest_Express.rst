@@ -33,6 +33,7 @@
 Перед началом работы необходимо настроить подпись, которой Вы будете подписывать документы.
 Чтобы перейти к Настройке ЭЦП, зайдите в Настройки, нажав на "**шестеренку**" в верхнем правом углу.
 Откроется Проводник, где необходимо будет указать каталог с секретными ключами и выбрать ключи.
+lkf dlkgm dlfkgmd lkfng nsdlfkn fdgvkm dfklgm dfl;kmg ;ldfmg dl;dmf glfm glmg dlf ldf
 
 
 .. image:: pics_Obmin_e_dokumentami_s_Meest_Express/Obmen_e-dokumentami_s_Meest-Express_02.png
