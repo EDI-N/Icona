@@ -10,6 +10,10 @@
    .wy-nav-content {
     max-width: 1200px !important;
 }
+
+
+   .wy-menu-vertical header,
+   .wy-menu-vertical p.caption {color: #EC1D24;}
    
    .wy-side-nav-search {background-color: #32a55c}
 
