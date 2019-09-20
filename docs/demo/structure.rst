@@ -6,7 +6,7 @@ Structural Elements
 .. contents:: Table of Contents
 
 
-https://docs.google.com/spreadsheets/d/e/2PACX-1vT0BHJfvDrs8NiXVcEriJzwol86n2YhFWW-pyYKv5cM_Dpc9qZKTPodvb-lOeHeXQ/pubhtml
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT0BHJfvDrs8NiXVcEriJzwol86n2YhFWW-pyYKv5cM_Dpc9qZKTPodvb-lOeHeXQ/pubhtml?widget=true&amp;headers=false"></iframe>
 
 
 
