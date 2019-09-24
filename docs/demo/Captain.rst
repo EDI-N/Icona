@@ -9,8 +9,8 @@ An example of using :red:` **Captain Marvel**`
 
 .. role:: red
 
-An example of using :red:`interpreted text`
 
+.. rst:role:: Sample rst role
 
 
 
@@ -24,6 +24,8 @@ The film is written and directed by Anna Boden and Ryan Fleck, with Geneva Rober
 
 Заказ (ORDER) [f-[f-[f-[f штрихкод продукта, его описание, заказанное количество, цену и прочую необходимую информацию.
 Here's a grid table followed by a simple table:
+
+    This is a sample definition which links back to its anchor :rst:role:`Sample rst role`
 
 +------------------------+------------+----------+----------+
 | Header row, column 1   | Header 2   | Header 3 | Header 4 |
