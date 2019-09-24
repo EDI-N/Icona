@@ -440,5 +440,5 @@ Example checkbox
 .. container:: brak
     :name: abrakadabra
     
-    Альо!!!!!
+    **Альо!!!!!**
 Текст вверху является вжной составляющей и должен быть
