@@ -234,4 +234,4 @@ JSON-параметры в теле HTTP **запроса/ответа**
 
 а тут щось
 
-.. _`додаванні звязку пакета з типами документів`: https://wiki.edi-n.com/uk/latest/EDIN_DOCflow/edin_docflow/instruktsia-biznes-administratora.html#пакет-тип-документа
+.. _`додаванні звязку пакета з типами документів`: s://perevod.readthedocs.io/ru/1.0/demo/Captain.html#пакет-тип-документа
