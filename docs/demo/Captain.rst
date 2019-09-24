@@ -11,9 +11,6 @@ Ahoy
 
 .. _my-reference-label:
 
-Section to cross-reference
---------------------------
-
 This is the text of the section.
 
 
@@ -45,4 +42,4 @@ Here's a grid table followed by a simple table:
 
 Ну и
 
-It refers to the section itself, see :ref:`my-reference-label`.
+ :ref:`Link title <my-reference-label>`.
