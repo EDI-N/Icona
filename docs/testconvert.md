@@ -19,7 +19,6 @@ You will like those projects!
 
 
 .. raw:: html
-
     <div style="text-align: center; margin-bottom: 2em;">
     <iframe width="100%" height="350" src="https://www.youtube.com/watch?v=JSPG9NPj73E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
